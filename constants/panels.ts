@@ -4,6 +4,7 @@ import {
   IoCashOutline,
   IoMailOpenOutline
 } from 'react-icons/io5'
+import { CalendarPanel } from '../components/panels/CalendarPanel'
 
 export type PanelConfig = {
   id: number
