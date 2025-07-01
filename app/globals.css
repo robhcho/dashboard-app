@@ -1,8 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* 
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-} */
+  --sidebar-width-collapsed: 64px;
+  --sidebar-width-expanded: 240px;
+  --sidebar-gap: 16px;
+}

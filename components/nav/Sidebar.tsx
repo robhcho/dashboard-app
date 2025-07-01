@@ -12,13 +12,12 @@ type SidebarProps = {
 }
 
 const navItems = [
-  {title: 'Dashboard', icon: <RiHome4Fill />, path: '/dashboard'},
-  {title: 'Calendar', icon: <BiCalendarEvent />, path: '/calendar'},
-  {title: 'ROI', icon: <RiExchangeDollarFill />, path: '/roi'}
+  {title: 'Dashboard', icon: <RiHome4Fill size={20}/>, path: '/dashboard'},
+  {title: 'Calendar', icon: <BiCalendarEvent size={20}/>, path: '/calendar'},
+  {title: 'ROI', icon: <RiExchangeDollarFill size={20}/>, path: '/roi'}
 ]
 
 export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
-  // const [isOpen, setIsOpen] = useState(false)
 
   return (
     <div
@@ -29,14 +28,16 @@ export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
         isOpen ? 'w-64' : 'w-16'
       )}
     >
+      <div className='h-14' />
       <div className='flex flex-col pt-6 space-y-2'>
         {navItems.map((item, i) => (
           <Link
+            key={i}
             href={item.path}
             className='flex items-center gap-3 px-4 py-3 hover:bg-zinc-700 transition'
           >
             <span>{item.icon}</span>
-            {isOpen && <span className='text-sm font-medium'>{item.title}</span>}
+            {isOpen && <span className='text-sm font-medium uppercase'>{item.title}</span>}
           </Link>
         ))}
       </div>
