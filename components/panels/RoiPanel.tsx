@@ -1,70 +1,32 @@
 'use client'
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useMemo, useState } from 'react'
 import dayjs from 'dayjs'
 import { DonutChart } from '../charts/DonutChart'
+import { useRoiData } from '@/app/hooks/useRoiData'
 
 
-type RoiData = {
-  Cost: number,
-  Sales: number,
-  Adj_Sales: number,
-  Response: number,
-  Adj_Response: number,
-  Response_rate: number
-}
 
-export const RoiPanel: React.FC = () => {
-  const [loading, setLoading] = useState(true)
-  const [roi, setRoi] = useState<RoiData | null>(null)
-
-  useEffect(() => {
-    const today = dayjs().format('YYYY-MM-DD')
-    const twelveMonthsAgo = dayjs().subtract(12, 'month').format('YYYY-MM-DD')
-
-    const fetchData = async () => {
-      try {
-        const res = await fetch('/mock/roi.json')
-        const data = await res.json()
-        
-        setRoi(data)
-        setLoading(false)
-      } catch (err) {
-        console.error(err)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchData()
-  }, [])
-
-  if(loading) return <div>Loading..</div>
-  if(!roi) return <p>Failed to load ROI data</p>
-
-  if(!roi) {
-    return (
-      <div className='text-center py-10'>
-        <p className='text-lg font-bold text-blue-700'>There is currently no data available</p>
-      </div>
-    )
-  }
-
-  const avgTicket = roi.Response ? roi.Sales / roi.Response : 0
-
-  const chartData = {
+export const RoiPanel: React.FC = () => {  
+  const { data: roi, loading, error } = useRoiData()
+  
+  const avgTicket = roi?.Response ? roi.Sales / roi.Response : 0
+  
+  const chartData = useMemo(() => ({
     labels: ['Total Spend', 'Incremental Sales'],
     datasets: [
       {
-        data: [roi.Cost, roi.Adj_Sales],
+        data: [roi?.Cost, roi?.Adj_Sales].map(val => val ?? 0),
         backgroundColor: ['rgba(255, 99, 132, 0.8)', 'rgba(75, 192, 192, 0.8)'],
         borderWidth: 0
       }
     ]
-  }
+  }), [roi])
 
   const chartOptions = {
     cutout: '70%',
+    responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: { 
         position: 'bottom' as const,
@@ -78,9 +40,18 @@ export const RoiPanel: React.FC = () => {
     }
   }
 
+  if(loading) return <div>Loading..</div>
+  if(!roi) {
+    return (
+      <div className='text-center py-10'>
+        <p className='text-lg font-bold text-blue-700'>There is currently no data available</p>
+      </div>
+    )
+  }
+
   return (
     <div className='p-4 space-y-4'>
-      <p className='text-sm text-center'>
+      <p className='text-sm text-center sm:text-base leading-relaxed mb-6'>
         On completed promotions, a total spend of{' '}
         <span className='text-red-500 font-semibold'>${Math.round(roi.Cost).toLocaleString()}</span> yielded{' '}
         <span className='text-green-600 font-semibold'>${Math.round(roi.Sales).toLocaleString()}</span> in sales to
@@ -88,7 +59,7 @@ export const RoiPanel: React.FC = () => {
       </p>
 
       <div className='flex flex-col md:flex-row gap-6 justify-between items-center'>
-        <div className='space-y-4 text-left'>
+        <div className='flex flex-col w-full lg:w-1/2 space-y-4 text-left'>
           <div>
             <h5 className='text-xs text-cyan-600'>AVERAGE TICKET</h5>
             <p className='font-bold text-gray-700'>${Math.round(avgTicket).toLocaleString()}</p>
@@ -103,7 +74,7 @@ export const RoiPanel: React.FC = () => {
           </div>
         </div>
 
-        <div className='flex-1 flex justify-center items-center'>
+        <div className='w-full lg:w-1/2 max-w-[500px] mx-auto'>
           <DonutChart data={chartData} options={chartOptions} />
         </div>
       </div>
