@@ -5,8 +5,6 @@ import dayjs from 'dayjs'
 import { DonutChart } from '../charts/DonutChart'
 import { useRoiData } from '@/app/hooks/useRoiData'
 
-
-
 export const RoiPanel: React.FC = () => {  
   const { data: roi, loading, error } = useRoiData()
   
