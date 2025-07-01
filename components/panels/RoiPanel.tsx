@@ -16,7 +16,10 @@ export const RoiPanel: React.FC = () => {
     labels: ['Total Spend', 'Incremental Sales'],
     datasets: [
       {
-        data: [roi?.Cost, roi?.Adj_Sales].map(val => val ?? 0),
+        data: [
+          roi?.Cost !== undefined ? roi.Cost : 0,
+          roi?.Adj_Sales !== undefined ? roi.Adj_Sales : 0
+        ],
         backgroundColor: ['rgba(255, 99, 132, 0.8)', 'rgba(75, 192, 192, 0.8)'],
         borderWidth: 0
       }
