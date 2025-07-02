@@ -8,15 +8,15 @@ import { useRoiData } from '@/app/hooks/useRoiData'
 export const RoiPanel: React.FC = () => {  
   const { data: roi, loading, error } = useRoiData()
   
-  const avgTicket = roi?.Response ? roi.Sales / roi.Response : 0
+  const avgTicket = roi?.total_data.Response ? roi.total_data.Sales / roi.total_data.Response : 0
   
   const chartData = useMemo(() => ({
     labels: ['Total Spend', 'Incremental Sales'],
     datasets: [
       {
         data: [
-          roi?.Cost !== undefined ? roi.Cost : 0,
-          roi?.Adj_Sales !== undefined ? roi.Adj_Sales : 0
+          roi?.total_data.Cost !== undefined ? roi.total_data.Cost : 0,
+          roi?.total_data.Adj_Sales !== undefined ? roi.total_data.Adj_Sales : 0
         ],
         backgroundColor: ['rgba(255, 99, 132, 0.8)', 'rgba(75, 192, 192, 0.8)'],
         borderWidth: 0
@@ -54,9 +54,9 @@ export const RoiPanel: React.FC = () => {
     <div className='p-4 space-y-4'>
       <p className='text-sm text-center sm:text-base leading-relaxed mb-6'>
         On completed promotions, a total spend of{' '}
-        <span className='text-red-500 font-semibold'>${Math.round(roi.Cost).toLocaleString()}</span> yielded{' '}
-        <span className='text-green-600 font-semibold'>${Math.round(roi.Sales).toLocaleString()}</span> in sales to
-        responders (at a {(roi.Response_rate * 100).toFixed(2)}% response rate)
+        <span className='text-red-500 font-semibold'>${Math.round(roi.total_data.Cost).toLocaleString()}</span> yielded{' '}
+        <span className='text-green-600 font-semibold'>${Math.round(roi.total_data.Sales).toLocaleString()}</span> in sales to
+        responders (at a {(roi.total_data.Response_rate * 100).toFixed(2)}% response rate)
       </p>
 
       <div className='flex flex-col md:flex-row gap-6 justify-between items-center'>
@@ -67,11 +67,11 @@ export const RoiPanel: React.FC = () => {
           </div>
           <div>
             <h5 className='text-xs text-lime-700'>INCREMENTAL SALES</h5>
-            <p className='font-bold text-gray-700'>${Math.round(roi.Adj_Sales).toLocaleString()}</p>
+            <p className='font-bold text-gray-700'>${Math.round(roi.total_data.Adj_Sales).toLocaleString()}</p>
           </div>
           <div>
             <h5 className='text-xs text-pink-600'>INCREMENTAL RESPONSES</h5>
-            <p className='font-bold text-gray-700'>${Math.round(roi.Adj_Response).toLocaleString()}</p>
+            <p className='font-bold text-gray-700'>${Math.round(roi.total_data.Adj_Response).toLocaleString()}</p>
           </div>
         </div>
 
