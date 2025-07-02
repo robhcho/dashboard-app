@@ -4,6 +4,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 // import { BellIcon, SunIcon, MoonIcon, ChevronDown } from 'lucide-react'
 import { IoIosNotifications, IoIosSunny, IoIosMoon, IoIosMore } from 'react-icons/io'
+import { AppBarMenu } from './AppBarMenu'
 
 export const AppBar = ({
   companyName,
@@ -38,9 +39,10 @@ export const AppBar = ({
         </button>
         <div className='h-6 w-px bg-gray-500'/>
         <div className='relative'>
-          <button onClick={() => setMenuOpen(prev => !prev)} className='flex items-center gap-1 hover:text-gray-300'>
+          <AppBarMenu />
+          {/* <button onClick={() => setMenuOpen(prev => !prev)} className='flex items-center gap-1 hover:text-gray-300'>
             <IoIosMore/>
-          </button>
+          </button> */}
         </div>
       </div>
     </header>
