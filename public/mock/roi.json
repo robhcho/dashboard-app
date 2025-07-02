@@ -1,8 +1,62 @@
 {
-  "Cost": 12500,
-  "Sales": 48000,
-  "Adj_Sales": 22000,
-  "Response": 1500,
-  "Adj_Response": 450,
-  "Response_rate": 0.032
+  "total_data": {
+    "Cost": 385000,
+    "Sales": 1925000,
+    "Adj_Sales": 625000,
+    "Response": 1640,
+    "Adj_Response": 490,
+    "Response_rate": 0.0031
+  },
+  "cust_pros_data": [
+    {
+      "type": "Customers",
+      "spend": 110000,
+      "sales": 1120000,
+      "mailed": 132000,
+      "responses": 910,
+      "holdout_sales": 185000,
+      "holdout_count": 22000,
+      "holdout_responses": 140,
+      "incremental_responses": 770,
+      "avg_ticket": 1230
+    },
+    {
+      "type": "Prospects",
+      "spend": 275000,
+      "sales": 805000,
+      "mailed": 268000,
+      "responses": 730,
+      "holdout_sales": 82000,
+      "holdout_count": 40000,
+      "holdout_responses": 100,
+      "incremental_responses": 630,
+      "avg_ticket": 1102
+    }
+  ],
+  "list_data": [
+    {
+      "type": "Browse Abandoned",
+      "spend": 315000,
+      "sales": 1650000,
+      "mailed": 372000,
+      "responses": 1400,
+      "holdout_sales": 230000,
+      "holdout_count": 46000,
+      "holdout_responses": 130,
+      "incremental_responses": 1150,
+      "avg_ticket": 1179
+    },
+    {
+      "type": "Cart Abandoned",
+      "spend": 70000,
+      "sales": 275000,
+      "mailed": 28000,
+      "responses": 240,
+      "holdout_sales": 37000,
+      "holdout_count": 8000,
+      "holdout_responses": 30,
+      "incremental_responses": 210,
+      "avg_ticket": 1145
+    }
+  ]
 }

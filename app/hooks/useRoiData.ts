@@ -1,12 +1,31 @@
 import { useEffect, useState } from 'react'
 
-export type RoiData = {
+export type TotalData = {
   Cost: number,
   Sales: number,
   Adj_Sales: number,
   Response: number,
   Adj_Response: number,
   Response_rate: number
+}
+
+export type BreakdownData = {
+  type: string
+  spend: number
+  sales: number
+  mailed: number
+  responses: number
+  holdout_sales: number
+  holdout_count: number
+  holdout_responses: number
+  incremental_responses: number
+  avg_ticket: number
+}
+
+export type RoiData = {
+  total_data: TotalData,
+  cust_pros_data: BreakdownData[]
+  list_data: BreakdownData[]
 }
 
 export const useRoiData = () => {
