@@ -5,41 +5,8 @@ import { DonutChart } from '@/components/charts/DonutChart'
 import { useRoiData } from '@/app/hooks/useRoiData'
 import { RoiTable } from '../ui/Table'
 import { ChartData } from 'chart.js'
-
-// const incData = {
-//   labels: ['Total Sales', 'Incremental Sales'],
-//   datasets: [
-//     {
-//       label: 'Sales',
-//       data: [112000, 54000],
-//       backgroundColor: ['#5fb500', '#d6a800'],
-//       barThickness: 50,
-//       borderRadius: 8,
-//     }
-//   ]
-// }
-
-// const options = {
-//   responsive: true,
-//   plugins: {
-//     legend: { display: false},
-//     tooltip: {
-//       callbacks:{
-//         label: function(context: any) {
-//           return `$${Number(context.raw).toLocaleString()}`
-//         }
-//       }
-//     },
-//   },
-//   scales: {
-//     y: {
-//       beginAtZero: true,
-//       ticks: {
-//         callback: (value: string | number) => `$${value.toLocaleString()}`,
-//       }
-//     }
-//   }
-// }
+import { DateFilter } from '../ui/DateFilter'
+import { RiExchangeDollarFill } from 'react-icons/ri'
 
 const columns = [
   {key: 'type', label: 'Type', align: 'left' as const},
@@ -60,6 +27,10 @@ export const RoiMain = () => {
   const {data} = useRoiData()
   const [selectedKey, setSelectedKey] = useState<'cust_pros_data' | 'list_data'>('cust_pros_data')
   const selectedOption = chartOptions.find(opt => opt.key === selectedKey)
+  const [dateRange, setDateRange] = useState<[Date, Date]>([
+    new Date(new Date().setMonth(new Date().getMonth() - 1)),
+    new Date()
+  ])
   
   const donutChartData = useMemo(() => {
     if(!data) return {}
@@ -84,11 +55,18 @@ export const RoiMain = () => {
 
     return map
   }, [data, selectedKey])
+
+  const handleDateChange = (range: [Date, Date]) => {
+    setDateRange(range)
+  }
   
   if(!data) return null
   return (
     <div className='pt-5'>
-      ROI MAIN
+      <div className='mb-3 flex justify-between items-center'>
+        <h4 className='flex items-center text-lg'><RiExchangeDollarFill className='mr-1'/> ROI</h4>
+        <DateFilter onDateChange={handleDateChange} />
+      </div>
       <Stats />
       <RoiTable 
         title="Customers vs Prospects"
