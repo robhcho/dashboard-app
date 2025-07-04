@@ -29,25 +29,25 @@ export const PromoPanel = () => {
   const incrementalResponseRate = Math.max((mailedRate - holdoutRate) * 100, 0).toFixed(2)
 
   return (
-    <div className='bg-white rounded-lgx p-4 w-full'>
-      <h2 className='text-lg font-semibold mb-2'>{latestPromo.promo_name}</h2>
+    <div className='p-4'>
+      <h2 className='text-lg font-semibold w-full'>{latestPromo.promo_name}</h2>
       <p className='text-sm text-gray-600 mb-4'>
         {dayjs(latestPromo.promo_dates.start).format('MMM DD, YYYY')} - {dayjs(latestPromo.promo_dates.end).format('MMM DD, YYYY')}
       </p>
 
-      <div className='flex grid grid-cols-2 gap-4 mb-4'>
-        <div className='grid gap-4 text-sm'>          
+      <div className='flex flex-col md:flex-row gap-6 justify-between items-center'>
+        <div className='flex flex-col w-full lg:w-1/2 space-y-4 text-left'>
           <div>
-            <span className='font-semibold'>AVG TICKET:</span><br/>
-            ${averageTicket.toLocaleString()}
+            <h5 className='text-xs text-cyan-600'>AVERAGE TICKET</h5>
+            <p className='font-bold text-gray-700'>${averageTicket.toLocaleString()}</p>
           </div>
           <div>
-            <span className='font-semibold'>Inc. Sales:</span><br/>
-            ${incrementalSales.toLocaleString()}
+            <h5 className='text-xs text-lime-700'>INCREMENTAL SALES</h5>
+            <p className='font-bold text-gray-700'>${incrementalSales.toLocaleString()}</p>
           </div>
           <div>
-            <span className='font-semibold'>Inc. Response Rate:</span><br/>
-            {incrementalResponseRate.toLocaleString()}%
+            <h5 className='text-xs text-pink-600'>INCREMENTAL RESPONSE RATE</h5>
+            <p className='font-bold text-gray-700'>{incrementalResponseRate.toLocaleString()}%</p>
           </div>
         </div>
         
