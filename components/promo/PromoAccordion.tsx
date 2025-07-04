@@ -27,11 +27,19 @@ export const PromoAccordion: React.FC<PromoAccordionProps> = ({promo}) => {
         className='w-full text-left px-4 py-3 flex items-center justify-between hover:bg-gray-100'
         onClick={() => setExpanded(!expanded)}
       >
-        <div>
+        <div className='w-full'>
           <h3 className='font-semibold text-lg'>{promo_name}</h3>
-          <p className='text-sm text-gray-500'>
-            {promo_dates.start} - {promo_dates.end}
-          </p>
+          <div className='flex items-center'>
+            <p className='text-sm text-gray-500'>
+              {promo_dates.start} - {promo_dates.end}
+            </p>
+            {!expanded && (
+              <span className='flex ml-24 items-center'>
+                <span className='mr-5'><Metric label="Mailed" value={total_data.mailed.toLocaleString()}/></span> | 
+                  <span className='ml-5'><Metric label="Response Rate" value={responseRate.toFixed(2)}/></span>
+                </span>
+            )}
+          </div>
         </div>
         <span>{expanded ? <FaChevronUp/> : <FaChevronDown/>}</span>
       </button>
@@ -62,7 +70,7 @@ export const PromoAccordion: React.FC<PromoAccordionProps> = ({promo}) => {
 
 const Metric = ({label, value}: { label: string; value: string}) => (
   <div>
-    <span className='text-gray-500'>{label}</span>
+    <span className='text-gray-500'>{label}: </span>
     <span className='font-medium'>{value}</span>
   </div>
 )
