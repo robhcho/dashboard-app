@@ -40,7 +40,7 @@ export const dashboardPanels: PanelConfig[] = [
     path: '/promo',    
     color: '#3b80b8',
     colorDark: 'rgba(59, 128, 184, 0.5)',
-    // subheader: 'Past 12 Months',
+    subheader: 'Most Recent Running Promotion',
     icon: IoMailOpenOutline,
   },  
 ]
