@@ -1,0 +1,518 @@
+[
+  {
+    "promo_name": "4th of July Event",
+    "promo_dates": {
+      "start": "2024-06-26",
+      "end": "2024-07-09"
+    },
+    "format": "Oversized Postcard",
+    "creatives": {
+      "front": "/mock-assets/4th-of-july-event-front.jpg",
+      "back": "/mock-assets/4th-of-july-event-back.jpg"
+    },
+    "total_data": {
+      "spend": 18446.98,
+      "mailed": 45056,
+      "responses": 902,
+      "sales": 59442
+    },
+    "roi": [
+      {
+        "status": "mailed",
+        "spend": 18446.98,
+        "mailed": 45056,
+        "responses": 902,
+        "sales": 59442,
+        "total_sales": 59442
+      },
+      {
+        "status": "holdout",
+        "spend": 0,
+        "mailed": 0,
+        "responses": 182,
+        "sales": 11994,
+        "total_sales": 11994
+      },
+      {
+        "status": "adjusted",
+        "spend": 18446.98,
+        "mailed": 45056,
+        "responses": 720,
+        "sales": 47448,
+        "total_sales": 47448
+      }
+    ],
+    "roi_by_market": [
+      {
+        "market": "Market A",
+        "spend": 3689.31,
+        "mailed": 9011,
+        "responses": 180,
+        "sales": 11862,
+        "total_sales": 11862
+      },
+      {
+        "market": "Market B",
+        "spend": 3689.31,
+        "mailed": 9011,
+        "responses": 180,
+        "sales": 11862,
+        "total_sales": 11862
+      },
+      {
+        "market": "Market C",
+        "spend": 3689.31,
+        "mailed": 9011,
+        "responses": 180,
+        "sales": 11862,
+        "total_sales": 11862
+      },
+      {
+        "market": "Market D",
+        "spend": 3689.31,
+        "mailed": 9011,
+        "responses": 180,
+        "sales": 11862,
+        "total_sales": 11862
+      },
+      {
+        "market": "Market E",
+        "spend": 3689.31,
+        "mailed": 9011,
+        "responses": 180,
+        "sales": 11862,
+        "total_sales": 11862
+      }
+    ]
+  },
+  {
+    "promo_name": "Spring Savings",
+    "promo_dates": {
+      "start": "2025-03-01",
+      "end": "2025-03-14"
+    },
+    "format": "Self-Mailer",
+    "creatives": {
+      "front": "/mock-assets/spring-savings-front.jpg",
+      "back": "/mock-assets/spring-savings-back.jpg"
+    },
+    "total_data": {
+      "spend": 26337.28,
+      "mailed": 71036,
+      "responses": 2051,
+      "sales": 193590
+    },
+    "roi": [
+      {
+        "status": "mailed",
+        "spend": 26337.28,
+        "mailed": 71036,
+        "responses": 2051,
+        "sales": 193590,
+        "total_sales": 193590
+      },
+      {
+        "status": "holdout",
+        "spend": 0,
+        "mailed": 0,
+        "responses": 412,
+        "sales": 38887,
+        "total_sales": 38887
+      },
+      {
+        "status": "adjusted",
+        "spend": 26337.28,
+        "mailed": 71036,
+        "responses": 1639,
+        "sales": 154703,
+        "total_sales": 154703
+      }
+    ],
+    "roi_by_market": [
+      {
+        "market": "Market A",
+        "spend": 5267.38,
+        "mailed": 14207,
+        "responses": 410,
+        "sales": 38699,
+        "total_sales": 38699
+      },
+      {
+        "market": "Market B",
+        "spend": 5267.38,
+        "mailed": 14207,
+        "responses": 410,
+        "sales": 38699,
+        "total_sales": 38699
+      },
+      {
+        "market": "Market C",
+        "spend": 5267.38,
+        "mailed": 14207,
+        "responses": 410,
+        "sales": 38699,
+        "total_sales": 38699
+      },
+      {
+        "market": "Market D",
+        "spend": 5267.38,
+        "mailed": 14207,
+        "responses": 410,
+        "sales": 38699,
+        "total_sales": 38699
+      },
+      {
+        "market": "Market E",
+        "spend": 5267.38,
+        "mailed": 14207,
+        "responses": 410,
+        "sales": 38699,
+        "total_sales": 38699
+      }
+    ]
+  },
+  {
+    "promo_name": "Summer Kickoff",
+    "promo_dates": {
+      "start": "2025-05-15",
+      "end": "2025-05-28"
+    },
+    "format": "Catalog",
+    "creatives": {
+      "front": "/mock-assets/summer-kickoff-front.jpg",
+      "back": "/mock-assets/summer-kickoff-back.jpg"
+    },
+    "total_data": {
+      "spend": 35330.77,
+      "mailed": 82237,
+      "responses": 2746,
+      "sales": 250904
+    },
+    "roi": [
+      {
+        "status": "mailed",
+        "spend": 35330.77,
+        "mailed": 82237,
+        "responses": 2746,
+        "sales": 250904,
+        "total_sales": 250904
+      },
+      {
+        "status": "holdout",
+        "spend": 0,
+        "mailed": 0,
+        "responses": 549,
+        "sales": 50162,
+        "total_sales": 50162
+      },
+      {
+        "status": "adjusted",
+        "spend": 35330.77,
+        "mailed": 82237,
+        "responses": 2197,
+        "sales": 200742,
+        "total_sales": 200742
+      }
+    ],
+    "roi_by_market": [
+      {
+        "market": "Market A",
+        "spend": 7065.98,
+        "mailed": 16447,
+        "responses": 549,
+        "sales": 50162,
+        "total_sales": 50162
+      },
+      {
+        "market": "Market B",
+        "spend": 7065.98,
+        "mailed": 16447,
+        "responses": 549,
+        "sales": 50162,
+        "total_sales": 50162
+      },
+      {
+        "market": "Market C",
+        "spend": 7065.98,
+        "mailed": 16447,
+        "responses": 549,
+        "sales": 50162,
+        "total_sales": 50162
+      },
+      {
+        "market": "Market D",
+        "spend": 7065.98,
+        "mailed": 16447,
+        "responses": 549,
+        "sales": 50162,
+        "total_sales": 50162
+      },
+      {
+        "market": "Market E",
+        "spend": 7065.98,
+        "mailed": 16447,
+        "responses": 549,
+        "sales": 50162,
+        "total_sales": 50162
+      }
+    ]
+  },
+  {
+    "promo_name": "Back to School",
+    "promo_dates": {
+      "start": "2025-08-05",
+      "end": "2025-08-18"
+    },
+    "format": "Folded Mailer",
+    "creatives": {
+      "front": "/mock-assets/back-to-school-front.jpg",
+      "back": "/mock-assets/back-to-school-back.jpg"
+    },
+    "total_data": {
+      "spend": 16003.16,
+      "mailed": 39954,
+      "responses": 1116,
+      "sales": 69052
+    },
+    "roi": [
+      {
+        "status": "mailed",
+        "spend": 16003.16,
+        "mailed": 39954,
+        "responses": 1116,
+        "sales": 69052,
+        "total_sales": 69052
+      },
+      {
+        "status": "holdout",
+        "spend": 0,
+        "mailed": 0,
+        "responses": 430,
+        "sales": 26606,
+        "total_sales": 26606
+      },
+      {
+        "status": "adjusted",
+        "spend": 16003.16,
+        "mailed": 39954,
+        "responses": 686,
+        "sales": 42446,
+        "total_sales": 42446
+      }
+    ],
+    "roi_by_market": [
+      {
+        "market": "Market A",
+        "spend": 3200.31,
+        "mailed": 7990,
+        "responses": 223,
+        "sales": 13798,
+        "total_sales": 13798
+      },
+      {
+        "market": "Market B",
+        "spend": 3200.31,
+        "mailed": 7990,
+        "responses": 223,
+        "sales": 13798,
+        "total_sales": 13798
+      },
+      {
+        "market": "Market C",
+        "spend": 3200.31,
+        "mailed": 7990,
+        "responses": 223,
+        "sales": 13798,
+        "total_sales": 13798
+      },
+      {
+        "market": "Market D",
+        "spend": 3200.31,
+        "mailed": 7990,
+        "responses": 223,
+        "sales": 13798,
+        "total_sales": 13798
+      },
+      {
+        "market": "Market E",
+        "spend": 3200.31,
+        "mailed": 7990,
+        "responses": 223,
+        "sales": 13798,
+        "total_sales": 13798
+      }
+    ]
+  },
+  {
+    "promo_name": "Fall Deals",
+    "promo_dates": {
+      "start": "2025-09-10",
+      "end": "2025-09-24"
+    },
+    "format": "Oversized Postcard",
+    "creatives": {
+      "front": "/mock-assets/fall-deals-front.jpg",
+      "back": "/mock-assets/fall-deals-back.jpg"
+    },
+    "total_data": {
+      "spend": 23606.47,
+      "mailed": 86038,
+      "responses": 3213,
+      "sales": 269942
+    },
+    "roi": [
+      {
+        "status": "mailed",
+        "spend": 23606.47,
+        "mailed": 86038,
+        "responses": 3213,
+        "sales": 269942,
+        "total_sales": 269942
+      },
+      {
+        "status": "holdout",
+        "spend": 0,
+        "mailed": 0,
+        "responses": 833,
+        "sales": 69985,
+        "total_sales": 69985
+      },
+      {
+        "status": "adjusted",
+        "spend": 23606.47,
+        "mailed": 86038,
+        "responses": 2380,
+        "sales": 199957,
+        "total_sales": 199957
+      }
+    ],
+    "roi_by_market": [
+      {
+        "market": "Market A",
+        "spend": 4721.13,
+        "mailed": 17207,
+        "responses": 642,
+        "sales": 53938,
+        "total_sales": 53938
+      },
+      {
+        "market": "Market B",
+        "spend": 4721.13,
+        "mailed": 17207,
+        "responses": 642,
+        "sales": 53938,
+        "total_sales": 53938
+      },
+      {
+        "market": "Market C",
+        "spend": 4721.13,
+        "mailed": 17207,
+        "responses": 642,
+        "sales": 53938,
+        "total_sales": 53938
+      },
+      {
+        "market": "Market D",
+        "spend": 4721.13,
+        "mailed": 17207,
+        "responses": 642,
+        "sales": 53938,
+        "total_sales": 53938
+      },
+      {
+        "market": "Market E",
+        "spend": 4721.13,
+        "mailed": 17207,
+        "responses": 642,
+        "sales": 53938,
+        "total_sales": 53938
+      }
+    ]
+  },
+  {
+    "promo_name": "4th of July Event",
+    "promo_dates": {
+      "start": "2025-06-24",
+      "end": "2025-07-07"
+    },
+    "format": "Oversized Postcard",
+    "creatives": {
+      "front": "/mock-assets/4th-of-july-event-front.jpg",
+      "back": "/mock-assets/4th-of-july-event-back.jpg"
+    },
+    "total_data": {
+      "spend": 35619.96,
+      "mailed": 82672,
+      "responses": 1969,
+      "sales": 126515
+    },
+    "roi": [
+      {
+        "status": "mailed",
+        "spend": 35619.96,
+        "mailed": 82672,
+        "responses": 1969,
+        "sales": 126515,
+        "total_sales": 126515
+      },
+      {
+        "status": "holdout",
+        "spend": 0,
+        "mailed": 0,
+        "responses": 494,
+        "sales": 31741,
+        "total_sales": 31741
+      },
+      {
+        "status": "adjusted",
+        "spend": 35619.96,
+        "mailed": 82672,
+        "responses": 1475,
+        "sales": 94774,
+        "total_sales": 94774
+      }
+    ],
+    "roi_by_market": [
+      {
+        "market": "Market A",
+        "spend": 7123.82,
+        "mailed": 16534,
+        "responses": 393,
+        "sales": 25251,
+        "total_sales": 25251
+      },
+      {
+        "market": "Market B",
+        "spend": 7123.82,
+        "mailed": 16534,
+        "responses": 393,
+        "sales": 25251,
+        "total_sales": 25251
+      },
+      {
+        "market": "Market C",
+        "spend": 7123.82,
+        "mailed": 16534,
+        "responses": 393,
+        "sales": 25251,
+        "total_sales": 25251
+      },
+      {
+        "market": "Market D",
+        "spend": 7123.82,
+        "mailed": 16534,
+        "responses": 393,
+        "sales": 25251,
+        "total_sales": 25251
+      },
+      {
+        "market": "Market E",
+        "spend": 7123.82,
+        "mailed": 16534,
+        "responses": 393,
+        "sales": 25251,
+        "total_sales": 25251
+      }
+    ]
+  }
+]

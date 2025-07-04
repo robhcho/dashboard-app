@@ -3,6 +3,7 @@
 import React, { useState } from 'react'
 import { RiHome4Fill, RiExchangeDollarFill } from 'react-icons/ri'
 import { BiCalendarEvent } from 'react-icons/bi'
+import { IoMailOpenOutline } from 'react-icons/io5'
 import Link from 'next/link'
 import clsx from 'clsx'
 
@@ -14,7 +15,8 @@ type SidebarProps = {
 const navItems = [
   {title: 'Dashboard', icon: <RiHome4Fill size={20}/>, path: '/dashboard'},
   {title: 'Calendar', icon: <BiCalendarEvent size={20}/>, path: '/calendar'},
-  {title: 'ROI', icon: <RiExchangeDollarFill size={20}/>, path: '/roi'}
+  {title: 'ROI', icon: <RiExchangeDollarFill size={20}/>, path: '/roi'},
+  {title: 'Promos', icon: <IoMailOpenOutline size={20}/>, path: '/promos'}
 ]
 
 export const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
