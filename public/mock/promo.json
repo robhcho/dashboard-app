@@ -7,8 +7,8 @@
     },
     "format": "Oversized Postcard",
     "creatives": {
-      "front": "/mock-assets/4th-of-july-event-front.jpg",
-      "back": "/mock-assets/4th-of-july-event-back.jpg"
+      "front": "",
+      "back": ""
     },
     "total_data": {
       "spend": 18446.98,
@@ -23,7 +23,7 @@
         "mailed": 45056,
         "responses": 902,
         "sales": 59442,
-        "total_sales": 59442
+        "total_sales": 63748.37
       },
       {
         "status": "holdout",
@@ -31,7 +31,7 @@
         "mailed": 0,
         "responses": 182,
         "sales": 11994,
-        "total_sales": 11994
+        "total_sales": 13062.16
       },
       {
         "status": "adjusted",
@@ -39,49 +39,49 @@
         "mailed": 45056,
         "responses": 720,
         "sales": 47448,
-        "total_sales": 47448
+        "total_sales": 51953.43
       }
     ],
     "roi_by_market": [
       {
-        "market": "Market A",
-        "spend": 3689.31,
-        "mailed": 9011,
-        "responses": 180,
-        "sales": 11862,
-        "total_sales": 11862
+        "market": "Florida",
+        "spend": 3724.81,
+        "mailed": 9012,
+        "responses": 181,
+        "sales": 12643.2,
+        "total_sales": 13967.52
       },
       {
-        "market": "Market B",
-        "spend": 3689.31,
+        "market": "Northeast",
+        "spend": 3825.99,
         "mailed": 9011,
-        "responses": 180,
-        "sales": 11862,
-        "total_sales": 11862
+        "responses": 181,
+        "sales": 11534.43,
+        "total_sales": 12331.8
       },
       {
-        "market": "Market C",
-        "spend": 3689.31,
+        "market": "Mountain Region",
+        "spend": 3778.72,
         "mailed": 9011,
         "responses": 180,
-        "sales": 11862,
-        "total_sales": 11862
+        "sales": 12236.88,
+        "total_sales": 13179.09
       },
       {
-        "market": "Market D",
-        "spend": 3689.31,
+        "market": "New York Metro",
+        "spend": 3504.9,
         "mailed": 9011,
         "responses": 180,
-        "sales": 11862,
-        "total_sales": 11862
+        "sales": 11821.71,
+        "total_sales": 12922.36
       },
       {
-        "market": "Market E",
-        "spend": 3689.31,
+        "market": "New England",
+        "spend": 3651.51,
         "mailed": 9011,
         "responses": 180,
-        "sales": 11862,
-        "total_sales": 11862
+        "sales": 12328.28,
+        "total_sales": 13499.34
       }
     ]
   },
@@ -93,8 +93,8 @@
     },
     "format": "Self-Mailer",
     "creatives": {
-      "front": "/mock-assets/spring-savings-front.jpg",
-      "back": "/mock-assets/spring-savings-back.jpg"
+      "front": "",
+      "back": ""
     },
     "total_data": {
       "spend": 26337.28,
@@ -109,7 +109,7 @@
         "mailed": 71036,
         "responses": 2051,
         "sales": 193590,
-        "total_sales": 193590
+        "total_sales": 209649.38
       },
       {
         "status": "holdout",
@@ -117,7 +117,7 @@
         "mailed": 0,
         "responses": 412,
         "sales": 38887,
-        "total_sales": 38887
+        "total_sales": 40643.77
       },
       {
         "status": "adjusted",
@@ -125,49 +125,49 @@
         "mailed": 71036,
         "responses": 1639,
         "sales": 154703,
-        "total_sales": 154703
+        "total_sales": 163080.13
       }
     ],
     "roi_by_market": [
       {
-        "market": "Market A",
-        "spend": 5267.38,
-        "mailed": 14207,
-        "responses": 410,
-        "sales": 38699,
-        "total_sales": 38699
+        "market": "Mid-Atlantic",
+        "spend": 5150.16,
+        "mailed": 14208,
+        "responses": 411,
+        "sales": 39366.99,
+        "total_sales": 41607.64
       },
       {
-        "market": "Market B",
-        "spend": 5267.38,
+        "market": "Northeast",
+        "spend": 5294.42,
         "mailed": 14207,
         "responses": 410,
-        "sales": 38699,
-        "total_sales": 38699
+        "sales": 38522.64,
+        "total_sales": 43267.24
       },
       {
-        "market": "Market C",
-        "spend": 5267.38,
+        "market": "New York Metro",
+        "spend": 5106.13,
         "mailed": 14207,
         "responses": 410,
-        "sales": 38699,
-        "total_sales": 38699
+        "sales": 37227.33,
+        "total_sales": 40129.73
       },
       {
-        "market": "Market D",
-        "spend": 5267.38,
+        "market": "Mountain Region",
+        "spend": 5510.1,
         "mailed": 14207,
         "responses": 410,
-        "sales": 38699,
-        "total_sales": 38699
+        "sales": 36491.31,
+        "total_sales": 41084.83
       },
       {
-        "market": "Market E",
-        "spend": 5267.38,
+        "market": "Midwest",
+        "spend": 5394.14,
         "mailed": 14207,
         "responses": 410,
-        "sales": 38699,
-        "total_sales": 38699
+        "sales": 38903.96,
+        "total_sales": 43987.63
       }
     ]
   },
@@ -179,8 +179,8 @@
     },
     "format": "Catalog",
     "creatives": {
-      "front": "/mock-assets/summer-kickoff-front.jpg",
-      "back": "/mock-assets/summer-kickoff-back.jpg"
+      "front": "",
+      "back": ""
     },
     "total_data": {
       "spend": 35330.77,
@@ -195,7 +195,7 @@
         "mailed": 82237,
         "responses": 2746,
         "sales": 250904,
-        "total_sales": 250904
+        "total_sales": 284722.94
       },
       {
         "status": "holdout",
@@ -203,7 +203,7 @@
         "mailed": 0,
         "responses": 549,
         "sales": 50162,
-        "total_sales": 50162
+        "total_sales": 55184.82
       },
       {
         "status": "adjusted",
@@ -211,62 +211,62 @@
         "mailed": 82237,
         "responses": 2197,
         "sales": 200742,
-        "total_sales": 200742
+        "total_sales": 222219.67
       }
     ],
     "roi_by_market": [
       {
-        "market": "Market A",
-        "spend": 7065.98,
-        "mailed": 16447,
-        "responses": 549,
-        "sales": 50162,
-        "total_sales": 50162
+        "market": "New England",
+        "spend": 7343.92,
+        "mailed": 16448,
+        "responses": 550,
+        "sales": 46893.05,
+        "total_sales": 52482.18
       },
       {
-        "market": "Market B",
-        "spend": 7065.98,
-        "mailed": 16447,
+        "market": "Bay Area",
+        "spend": 7407.45,
+        "mailed": 16448,
         "responses": 549,
-        "sales": 50162,
-        "total_sales": 50162
+        "sales": 52507.88,
+        "total_sales": 53652.22
       },
       {
-        "market": "Market C",
-        "spend": 7065.98,
+        "market": "Texas",
+        "spend": 6923.22,
         "mailed": 16447,
         "responses": 549,
-        "sales": 50162,
-        "total_sales": 50162
+        "sales": 50964.31,
+        "total_sales": 53821.22
       },
       {
-        "market": "Market D",
-        "spend": 7065.98,
+        "market": "Desert Region",
+        "spend": 7116.68,
         "mailed": 16447,
         "responses": 549,
-        "sales": 50162,
-        "total_sales": 50162
+        "sales": 51719.5,
+        "total_sales": 58235.84
       },
       {
-        "market": "Market E",
-        "spend": 7065.98,
+        "market": "South Central",
+        "spend": 6766.38,
         "mailed": 16447,
         "responses": 549,
-        "sales": 50162,
-        "total_sales": 50162
+        "sales": 53172.99,
+        "total_sales": 59757.0
       }
     ]
   },
   {
     "promo_name": "Back to School",
     "promo_dates": {
-      "start": "2024-08-05",
-      "end": "2024-08-18"
+      "start": "2025-08-05",
+      "end": "2025-08-18"
     },
     "format": "Folded Mailer",
     "creatives": {
-      "front": "/mock-assets/back-to-school-front.jpg",
-      "back": "/mock-assets/back-to-school-back.jpg"
+      "front": "",
+      "back": ""
     },
     "total_data": {
       "spend": 16003.16,
@@ -281,7 +281,7 @@
         "mailed": 39954,
         "responses": 1116,
         "sales": 69052,
-        "total_sales": 69052
+        "total_sales": 75773.61
       },
       {
         "status": "holdout",
@@ -289,7 +289,7 @@
         "mailed": 0,
         "responses": 430,
         "sales": 26606,
-        "total_sales": 26606
+        "total_sales": 30287.29
       },
       {
         "status": "adjusted",
@@ -297,62 +297,62 @@
         "mailed": 39954,
         "responses": 686,
         "sales": 42446,
-        "total_sales": 42446
+        "total_sales": 45175.31
       }
     ],
     "roi_by_market": [
       {
-        "market": "Market A",
-        "spend": 3200.31,
-        "mailed": 7990,
-        "responses": 223,
-        "sales": 13798,
-        "total_sales": 13798
+        "market": "Desert Region",
+        "spend": 3344.86,
+        "mailed": 7991,
+        "responses": 224,
+        "sales": 13548.2,
+        "total_sales": 15038.5
       },
       {
-        "market": "Market B",
-        "spend": 3200.31,
-        "mailed": 7990,
+        "market": "Florida",
+        "spend": 3097.91,
+        "mailed": 7991,
         "responses": 223,
-        "sales": 13798,
-        "total_sales": 13798
+        "sales": 14396.15,
+        "total_sales": 14562.15
       },
       {
-        "market": "Market C",
-        "spend": 3200.31,
-        "mailed": 7990,
+        "market": "Texas",
+        "spend": 3261.37,
+        "mailed": 7991,
         "responses": 223,
-        "sales": 13798,
-        "total_sales": 13798
+        "sales": 14050.98,
+        "total_sales": 15789.2
       },
       {
-        "market": "Market D",
-        "spend": 3200.31,
-        "mailed": 7990,
+        "market": "New England",
+        "spend": 3249.83,
+        "mailed": 7991,
         "responses": 223,
-        "sales": 13798,
-        "total_sales": 13798
+        "sales": 14632.9,
+        "total_sales": 14961.89
       },
       {
-        "market": "Market E",
-        "spend": 3200.31,
+        "market": "Pacific Northwest",
+        "spend": 3205.12,
         "mailed": 7990,
         "responses": 223,
-        "sales": 13798,
-        "total_sales": 13798
+        "sales": 13865.96,
+        "total_sales": 15765.25
       }
     ]
   },
   {
     "promo_name": "Fall Deals",
     "promo_dates": {
-      "start": "2024-09-10",
-      "end": "2024-09-24"
+      "start": "2025-09-10",
+      "end": "2025-09-24"
     },
     "format": "Oversized Postcard",
     "creatives": {
-      "front": "/mock-assets/fall-deals-front.jpg",
-      "back": "/mock-assets/fall-deals-back.jpg"
+      "front": "",
+      "back": ""
     },
     "total_data": {
       "spend": 23606.47,
@@ -367,7 +367,7 @@
         "mailed": 86038,
         "responses": 3213,
         "sales": 269942,
-        "total_sales": 269942
+        "total_sales": 310034.72
       },
       {
         "status": "holdout",
@@ -375,7 +375,7 @@
         "mailed": 0,
         "responses": 833,
         "sales": 69985,
-        "total_sales": 69985
+        "total_sales": 74592.77
       },
       {
         "status": "adjusted",
@@ -383,49 +383,49 @@
         "mailed": 86038,
         "responses": 2380,
         "sales": 199957,
-        "total_sales": 199957
+        "total_sales": 209440.82
       }
     ],
     "roi_by_market": [
       {
-        "market": "Market A",
-        "spend": 4721.13,
-        "mailed": 17207,
-        "responses": 642,
-        "sales": 53938,
-        "total_sales": 53938
+        "market": "Florida",
+        "spend": 4522.04,
+        "mailed": 17208,
+        "responses": 643,
+        "sales": 52630.19,
+        "total_sales": 59826.34
       },
       {
-        "market": "Market B",
-        "spend": 4721.13,
-        "mailed": 17207,
-        "responses": 642,
-        "sales": 53938,
-        "total_sales": 53938
+        "market": "Mid-Atlantic",
+        "spend": 4846.12,
+        "mailed": 17208,
+        "responses": 643,
+        "sales": 55650.14,
+        "total_sales": 63172.99
       },
       {
-        "market": "Market C",
-        "spend": 4721.13,
-        "mailed": 17207,
-        "responses": 642,
-        "sales": 53938,
-        "total_sales": 53938
+        "market": "Desert Region",
+        "spend": 4857.91,
+        "mailed": 17208,
+        "responses": 643,
+        "sales": 53685.65,
+        "total_sales": 59299.51
       },
       {
-        "market": "Market D",
-        "spend": 4721.13,
+        "market": "Northeast",
+        "spend": 4948.04,
         "mailed": 17207,
         "responses": 642,
-        "sales": 53938,
-        "total_sales": 53938
+        "sales": 53829.87,
+        "total_sales": 55921.25
       },
       {
-        "market": "Market E",
-        "spend": 4721.13,
+        "market": "Northern Plains",
+        "spend": 4852.96,
         "mailed": 17207,
         "responses": 642,
-        "sales": 53938,
-        "total_sales": 53938
+        "sales": 50487.42,
+        "total_sales": 53346.06
       }
     ]
   },
@@ -437,8 +437,8 @@
     },
     "format": "Oversized Postcard",
     "creatives": {
-      "front": "/mock-assets/4th-of-july-event-front.jpg",
-      "back": "/mock-assets/4th-of-july-event-back.jpg"
+      "front": "",
+      "back": ""
     },
     "total_data": {
       "spend": 35619.96,
@@ -453,7 +453,7 @@
         "mailed": 82672,
         "responses": 1969,
         "sales": 126515,
-        "total_sales": 126515
+        "total_sales": 136425.45
       },
       {
         "status": "holdout",
@@ -461,7 +461,7 @@
         "mailed": 0,
         "responses": 494,
         "sales": 31741,
-        "total_sales": 31741
+        "total_sales": 34671.96
       },
       {
         "status": "adjusted",
@@ -469,49 +469,49 @@
         "mailed": 82672,
         "responses": 1475,
         "sales": 94774,
-        "total_sales": 94774
+        "total_sales": 108145.11
       }
     ],
     "roi_by_market": [
       {
-        "market": "Market A",
-        "spend": 7123.82,
-        "mailed": 16534,
-        "responses": 393,
-        "sales": 25251,
-        "total_sales": 25251
+        "market": "Texas",
+        "spend": 6792.29,
+        "mailed": 16535,
+        "responses": 394,
+        "sales": 23997.25,
+        "total_sales": 26782.34
       },
       {
-        "market": "Market B",
-        "spend": 7123.82,
-        "mailed": 16534,
-        "responses": 393,
-        "sales": 25251,
-        "total_sales": 25251
+        "market": "Mid-Atlantic",
+        "spend": 7025.34,
+        "mailed": 16535,
+        "responses": 394,
+        "sales": 25573.77,
+        "total_sales": 27448.0
       },
       {
-        "market": "Market C",
-        "spend": 7123.82,
+        "market": "Florida",
+        "spend": 7260.54,
         "mailed": 16534,
-        "responses": 393,
-        "sales": 25251,
-        "total_sales": 25251
+        "responses": 394,
+        "sales": 26277.88,
+        "total_sales": 27154.17
       },
       {
-        "market": "Market D",
-        "spend": 7123.82,
+        "market": "Desert Region",
+        "spend": 6825.28,
         "mailed": 16534,
-        "responses": 393,
-        "sales": 25251,
-        "total_sales": 25251
+        "responses": 394,
+        "sales": 24100.02,
+        "total_sales": 27654.57
       },
       {
-        "market": "Market E",
-        "spend": 7123.82,
+        "market": "Midwest",
+        "spend": 6921.83,
         "mailed": 16534,
         "responses": 393,
-        "sales": 25251,
-        "total_sales": 25251
+        "sales": 26063.67,
+        "total_sales": 26580.28
       }
     ]
   }

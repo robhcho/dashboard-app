@@ -18,13 +18,13 @@ export const PromoRoiDrawer: React.FC<PromoRoiDrawerProps> = ({ promo, onClose }
     datasets: [
       {
         label: 'Sales',
-        backgroundColor: '#4f46e5',
+        backgroundColor: '#69b1fa',
         data: roi_by_market.map((entry) => entry.sales)
       },
       {
         label: 'Total Sales',
-        backgroundColor: '#60a5fa',
-        data: roi_by_market.map((entry) => entry.sales)
+        backgroundColor: '#4ce6b0',
+        data: roi_by_market.map((entry) => entry.total_sales)
       },
     ]
   }
@@ -94,33 +94,35 @@ export const PromoRoiDrawer: React.FC<PromoRoiDrawerProps> = ({ promo, onClose }
         </table>
       </div>
 
-      <div className='mt-8'>
-        <h3 className='font-semibold text-md mb-2'>
-          SALES VS TOTAL SALES BY MARKET
-        </h3>
-        <BarChart data={barChartData} options={barOptions} />
-      </div>
+      <div className='flex justify-between mt-20'>
+        <div className='w-1/2 m-4'>
+          <h3 className='font-semibold text-md mb-2'>
+            SALES VS TOTAL SALES BY MARKET
+          </h3>
+          <BarChart data={barChartData} options={barOptions} />
+        </div>
 
-      <div className='mt-8'>
-        <h3 className='font-semibold text-md mb-2'>Creatives</h3>
-        <div className='gap-4 flex'>
-          {['front', 'back'].map((side) => (
-            <div key={side} className='w-1/2'>
-              {creatives?.[side as 'front' | 'back'] ? (
-                <Image 
-                  src={creatives[side as 'front' | 'back']}
-                  alt={`${side} creative`}
-                  width={400}
-                  height={400}
-                  className='rounded border'
-                />
-              ) : (
-                <div className='h-48 border flex items-center justify-center text-gray-400'>
-                  No {side} image
-                </div>
-              )}
-            </div>
-          ))}
+        <div className='w-1/2 h-full'>
+          <h3 className='font-semibold text-md m-4'>CREATIVES</h3>
+          <div className='gap-4'>
+            {['front', 'back'].map((side) => (
+              <div key={side} className='m-4'>
+                {creatives?.[side as 'front' | 'back'] ? (
+                  <Image 
+                    src={creatives[side as 'front' | 'back']}
+                    alt={`${side} creative`}
+                    width={400}
+                    height={400}
+                    className='rounded border'
+                  />
+                ) : (
+                  <div className='h-48 border flex items-center justify-center text-gray-400'>
+                    No {side} image
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>
