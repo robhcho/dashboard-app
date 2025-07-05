@@ -31,6 +31,7 @@ export const PromoRoiDrawer: React.FC<PromoRoiDrawerProps> = ({ promo, onClose }
 
   const barOptions = {
     response: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         position: 'bottom' as const
@@ -94,16 +95,18 @@ export const PromoRoiDrawer: React.FC<PromoRoiDrawerProps> = ({ promo, onClose }
         </table>
       </div>
 
-      <div className='flex justify-between mt-20'>
-        <div className='w-1/2 m-4'>
-          <h3 className='font-semibold text-md mb-2'>
+      <div className='flex justify-between mt-20 items-stretch'>
+        <div className='w-1/2 p-4 flex flex-col'>
+          <h3 className='font-semibold text-md mb-4'>
             SALES VS TOTAL SALES BY MARKET
           </h3>
-          <BarChart data={barChartData} options={barOptions} />
+          <div className='flex-grow h-[400px]'>
+            <BarChart data={barChartData} options={barOptions} />
+          </div>
         </div>
 
-        <div className='w-1/2 h-full'>
-          <h3 className='font-semibold text-md m-4'>CREATIVES</h3>
+        <div className='w-1/2 flex flex-col'>
+          <h3 className='font-semibold text-md m-4 mb-2'>CREATIVES</h3>
           <div className='gap-4'>
             {['front', 'back'].map((side) => (
               <div key={side} className='m-4'>
