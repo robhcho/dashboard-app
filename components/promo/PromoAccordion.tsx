@@ -7,9 +7,10 @@ import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 
 type PromoAccordionProps = {
   promo: Promo
+  onViewRoi: (promo: Promo) => void
 }
 
-export const PromoAccordion: React.FC<PromoAccordionProps> = ({promo}) => {
+export const PromoAccordion: React.FC<PromoAccordionProps> = ({promo, onViewRoi}) => {
   const [expanded, setExpanded] = useState(false)
   const {
     promo_name,
@@ -61,6 +62,15 @@ export const PromoAccordion: React.FC<PromoAccordionProps> = ({promo}) => {
             <Metric label='Sales' value={`$${total_data.sales.toLocaleString()}`} />
             <Metric label='Response Rate' value={`${responseRate.toFixed(2)}`} />
             <Metric label='Avg Ticket' value={`$${Math.floor(avgTicket).toLocaleString()}`} />
+          </div>
+
+          <div className='mt-4'>
+            <button
+              onClick={() => onViewRoi(promo)}
+              className='px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700'
+            >
+              View ROI
+            </button>
           </div>
         </div>
       )}

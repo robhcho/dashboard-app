@@ -32,7 +32,7 @@ export type Promo = {
     responses: number
     sales: number
     total_sales: number
-  }
+  }[]
 }
 
 export const usePromoData = () => {
