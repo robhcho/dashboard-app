@@ -8,6 +8,7 @@ import { DndContext, closestCenter } from '@dnd-kit/core'
 import { arrayMove, SortableContext, verticalListSortingStrategy, } from '@dnd-kit/sortable'
 import { setPanelOrder } from '@/features/dashboardSlice'
 import { SortablePanel } from '@/components/dashboard/SortablePanel'
+import { WelcomeBoard } from '@/components/dashboard/Welcome'
 
 
 const DashboardPage = () => {
@@ -37,29 +38,32 @@ const DashboardPage = () => {
   if(!mounted) return null
 
   return (
-    <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
-      <SortableContext items={panelOrder} strategy={verticalListSortingStrategy}>
-        <div className='p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6'>
-          {panelOrder.map(id => {
-            const panel = dashboardPanels.find(p => p.id === id)
-            if(!panel) return null
-            return (
-              <SortablePanel key={id} id={id}>
-                <PanelCard                 
-                  panel={panel} 
-                  title={panel.title}
-                  path={panel.path.replace('/', '')}
-                  icon={panel.icon}
-                  color={panel.color}
-                  colorDark={panel.colorDark}
-                  subheader={panel.subheader}
-                />
-              </SortablePanel>
-            )
-          })}             
-        </div>
-      </SortableContext>
-    </DndContext>
+    <>
+      <WelcomeBoard user='User' companyName='Company' />
+      <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+        <SortableContext items={panelOrder} strategy={verticalListSortingStrategy}>
+          <div className='p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6'>
+            {panelOrder.map(id => {
+              const panel = dashboardPanels.find(p => p.id === id)
+              if(!panel) return null
+              return (
+                <SortablePanel key={id} id={id}>
+                  <PanelCard                 
+                    panel={panel} 
+                    title={panel.title}
+                    path={panel.path.replace('/', '')}
+                    icon={panel.icon}
+                    color={panel.color}
+                    colorDark={panel.colorDark}
+                    subheader={panel.subheader}
+                  />
+                </SortablePanel>
+              )
+            })}             
+          </div>
+        </SortableContext>
+      </DndContext>
+    </>
   )
 }
 

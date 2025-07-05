@@ -23,7 +23,7 @@ export const PanelCard: React.FC<PanelCardProps> = ({ title, path, icon, subhead
   
   return (
     <div
-      className='w-full bg-white rounded-lg border shadow-md overflow-hidden flex flex-col items-center'
+      className='w-full h-[450px] md:h-[400px] lg:h-[400px] bg-white rounded-lg border shadow-md overflow-hidden flex flex-col items-center'
       style={{borderColor: color}}
     >
       <div
@@ -40,7 +40,7 @@ export const PanelCard: React.FC<PanelCardProps> = ({ title, path, icon, subhead
           )}
         </div>
       </div>
-      <div className='p-4 text-sm text-gray-600'>
+      <div className='p-4 text-sm text-gray-600 flex-grow glex items-start w-full h-full'>
         {PanelComponent ? <PanelComponent /> : <p>No content available</p>}
       </div>
     </div>
