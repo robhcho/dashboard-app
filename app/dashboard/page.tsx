@@ -9,12 +9,14 @@ import { arrayMove, SortableContext, verticalListSortingStrategy, } from '@dnd-k
 import { setPanelOrder } from '@/features/dashboardSlice'
 import { SortablePanel } from '@/components/dashboard/SortablePanel'
 import { WelcomeBoard } from '@/components/dashboard/Welcome'
+import { MdSpaceDashboard } from 'react-icons/md'
 
 
 const DashboardPage = () => {
   const dispatch =  useAppDispatch()
   const panelOrder = useAppSelector(state => state.dashboard.panelOrder)
   const [ mounted, setMounted ] = useState(false)
+  const [ searchTerm, setSearchTerm ] = useState('')
 
   useEffect(() => {
     setMounted(true)
@@ -24,6 +26,10 @@ const DashboardPage = () => {
       dispatch(setPanelOrder(defaultOrder))
     }
   }, [dispatch, panelOrder.length])
+
+  const filteredDashPanels = dashboardPanels.filter(panel => 
+    panel.title.toLowerCase().includes(searchTerm.toLowerCase())
+  )
 
   const handleDragEnd = (e:any) => {
     const { active, over } = e
@@ -39,12 +45,25 @@ const DashboardPage = () => {
 
   return (
     <>
+      <div className='flex justify-between items-center mt-5'>
+        <div className='flex items-center'>
+          <MdSpaceDashboard className='mr-1'/>
+          Dashboard
+        </div>
+        <input 
+          type='text'
+          placeholder='Search'
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className='w-[200px] border rounded-md mr-4 px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500'
+        />
+      </div>
       <WelcomeBoard user='User' companyName='Company' />
       <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
         <SortableContext items={panelOrder} strategy={verticalListSortingStrategy}>
           <div className='p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6'>
             {panelOrder.map(id => {
-              const panel = dashboardPanels.find(p => p.id === id)
+              const panel = filteredDashPanels.find(p => p.id === id)
               if(!panel) return null
               return (
                 <SortablePanel key={id} id={id}>
