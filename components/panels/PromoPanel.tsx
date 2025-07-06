@@ -35,7 +35,7 @@ export const PromoPanel = () => {
         {dayjs(latestPromo.promo_dates.start).format('MMM DD, YYYY')} - {dayjs(latestPromo.promo_dates.end).format('MMM DD, YYYY')}
       </p>
 
-      <div className='flex flex-col md:flex-row gap-6 justify-between items-center'>
+      <div className='flex flex-row gap-6 justify-between items-center'>
         <div className='flex flex-col w-full lg:w-1/2 space-y-4 text-left'>
           <div>
             <h5 className='text-xs text-cyan-600'>AVERAGE TICKET</h5>

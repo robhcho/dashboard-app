@@ -55,6 +55,7 @@ export const CalendarPanel = () => {
   }
 
   return (    
+    <div className='w-full h-full flex items-center justify-center'>
       <Calendar 
         value={date}
         onChange={(val) => {
@@ -62,6 +63,8 @@ export const CalendarPanel = () => {
         }}
         tileContent={renderTileContent}
         locale='en-US'
-      />    
+        className='calendar-custom'
+      />
+    </div>
   )
 }

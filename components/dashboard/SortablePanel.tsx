@@ -1,12 +1,12 @@
 'use client'
 
-import React, { ReactNode } from 'react'
-import { useSortable } from '@dnd-kit/sortable'
+import React, { ReactElement, ReactNode } from 'react'
+import { AnimateLayoutChanges, useSortable, defaultAnimateLayoutChanges } from '@dnd-kit/sortable'
 import { CSS } from '@dnd-kit/utilities'
 
 type SortablePanelProps = {
   id: number| string
-  children: ReactNode
+  children: ReactElement<any>
 }
 
 export const SortablePanel: React.FC<SortablePanelProps> = ({id, children}) => {
@@ -14,21 +14,28 @@ export const SortablePanel: React.FC<SortablePanelProps> = ({id, children}) => {
     attributes,
     listeners,
     setNodeRef,
+    setActivatorNodeRef,
     transform,
     transition,
     isDragging,
-  } = useSortable({ id })
+  } = useSortable({ 
+    id,
+    animateLayoutChanges: defaultAnimateLayoutChanges as AnimateLayoutChanges,
+  })
 
   const style = {
     transform: CSS.Transform.toString(transform),
     transition,
-    opacity: isDragging ? 0.5 : 1,
-    cursor: 'grab'
+    opacity: isDragging ? 0.5 : 1,    
   }
 
   return (
-    <div ref={setNodeRef} style={style} {...attributes}{...listeners}>
-      {children}
+    <div ref={setNodeRef} style={style}>
+      {React.cloneElement(children, {
+        dragListeners: listeners,
+        dragAttributes: attributes,
+        setDragHandleRef: setActivatorNodeRef,
+      })}
     </div>
   )
 }

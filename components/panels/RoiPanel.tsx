@@ -59,7 +59,7 @@ export const RoiPanel: React.FC = () => {
         responders (at a {(roi.total_data.Response_rate * 100).toFixed(2)}% response rate)
       </p>
 
-      <div className='flex flex-col md:flex-row gap-6 justify-between items-center'>
+      <div className='flex flex-row gap-6 justify-between items-center'>
         <div className='flex flex-col w-full lg:w-1/2 space-y-4 text-left'>
           <div>
             <h5 className='text-xs text-cyan-600'>AVERAGE TICKET</h5>

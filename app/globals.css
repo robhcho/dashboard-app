@@ -7,3 +7,9 @@
   --sidebar-width-expanded: 240px;
   --sidebar-gap: 16px;
 }
+
+.calendar-custom {
+  width: 100% !important;
+  height: 100%;
+  border: none !important;
+}
