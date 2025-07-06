@@ -2,22 +2,21 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
-// import { BellIcon, SunIcon, MoonIcon, ChevronDown } from 'lucide-react'
 import { IoIosNotifications, IoIosSunny, IoIosMoon, IoIosMore } from 'react-icons/io'
 import { AppBarMenu } from './AppBarMenu'
+import { useAppDispatch, useAppSelector } from '@/lib/hooks'
+import { toggleDarkMode } from '@/features/themeSlice'
 
 export const AppBar = ({
   companyName,
-  onLogout,
-  onToggleTheme,
-  darkMode,
+  onLogout,  
 }: {
   companyName: string
-  onLogout: () => void
-  onToggleTheme: () => void
-  darkMode: boolean
+  onLogout: () => void  
 }) => {
   const [menuOpen, setMenuOpen] = useState(false)
+  const dispatch = useAppDispatch()
+  const darkMode = useAppSelector((state) => state.theme.darkMode)
 
   return (
     <header 
@@ -34,7 +33,7 @@ export const AppBar = ({
           <IoIosNotifications />
         </button>
         <div className='h-6 w-px bg-gray-500'/>
-        <button onClick={onToggleTheme} className='hover:text-gray-300'>
+        <button onClick={() => dispatch(toggleDarkMode())} className='hover:text-gray-300'>
           {darkMode ? <IoIosSunny /> : <IoIosMoon />}
         </button>
         <div className='h-6 w-px bg-gray-500'/>

@@ -62,7 +62,7 @@ export const PromoPage = () => {
           placeholder='Search by Promo'
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
-          className='w-[350px] border rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500'
+          className='w-[350px] border rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-600'
         />      
         
         <DateFilter onDateChange={setDateRange} />
@@ -81,7 +81,7 @@ export const PromoPage = () => {
         <div className={`fixed inset-0 z-50 flex justify-end transition-all duration-300 ${compareOpen ? 'w-1/2' : 'w-full'}`}>
           <div className='absolute inset-0 bg-black opacity-50' onClick={handleDrawerClose} />
 
-            <div className='relative w-full h-full bg-white shadow-xl p-6 overflow-y-auto'>
+            <div className='relative w-full h-full bg-white dark:bg-zinc-600 shadow-xl p-6 overflow-y-auto'>
               <div className='flex justify-between items-center mb-4 border-b-2 pb-4'>
                 <h2 className='text-xl font-semibold'>
                   ROI Breakdown
@@ -89,13 +89,13 @@ export const PromoPage = () => {
                 <div className='flex flex-col items-end'>
                   <button
                     onClick={handleDrawerClose}
-                    className='text-sm text-blue-600 hover:underline'
+                    className='text-sm text-blue-600 hover:underline dark:text-blue-300'
                   >
                     Close
                   </button>
                   <button
                     onClick={handleComparePromo}
-                    className='mt-4 text-sm text-blue-600 hover:text-blue-800'
+                    className='mt-4 text-sm text-blue-600 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-500'
                   >
                     Compare To Another Promo
                   </button>
@@ -107,7 +107,7 @@ export const PromoPage = () => {
       )}
 
       {compareOpen && (
-        <div className='fixed right-0 top-0 w-[50%] h-full bg-white shadow-lg z-50 p-6 overflow-y-auto'>          
+        <div className='fixed right-0 top-0 w-[50%] h-full bg-white dark:bg-zinc-600 shadow-lg z-50 p-6 overflow-y-auto'>          
           {!compareSelectedPromo ? (
             <>
               <div className='flex justify-between items-center mb-4'>
@@ -122,11 +122,11 @@ export const PromoPage = () => {
                 compareTargets.map((promo, idx) => (
                   <div
                     key={idx}
-                    className='border rounded p-4 mb-4 cursor-pointer hover:bg-gray-100'
+                    className='border rounded p-4 mb-4 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-400'
                     onClick={() => setCompareSelectedPromo(promo)}
                   >
                     <h3 className='font-semibold'>{promo.promo_name}</h3>
-                    <p className='text-sm text-gray-600'>
+                    <p className='text-sm text-gray-600 dark:text-gray-200'>
                       {promo.promo_dates.start} - {promo.promo_dates.end}
                     </p>                  
                   </div>
@@ -141,7 +141,7 @@ export const PromoPage = () => {
                 <h2 className='text-xl font-bold'>ROI Breakdown</h2>
                 <button
                   onClick={() => setCompareSelectedPromo(null)}
-                  className='text-sm text-blue-600 hover:underline'
+                  className='text-sm text-blue-600 hover:underline dark:text-blue-300'
                 >
                   Back To List
                 </button>

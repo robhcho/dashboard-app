@@ -51,15 +51,15 @@ export const PromoRoiDrawer: React.FC<PromoRoiDrawerProps> = ({ promo, onClose }
   }
 
   return (
-    <div className='text-sm text-gray-700'>
+    <div className='text-sm text-gray-700 dark:text-gray-100'>
       <div className='mb-4'>
         <h2 className='text-xl font-bold'>{promo_name}</h2>
-        <p className='text-gray-500'>{promo_dates.start} - {promo_dates.end}</p>
+        <p className='text-gray-500 dark:text-gray-400'>{promo_dates.start} - {promo_dates.end}</p>
       </div>
 
       <div className='overflow-x-auto'>
         <table className='w-full border text-left text-sm'>
-          <thead className='bg-gray-100 text-gray-600'>
+          <thead className='bg-gray-100 text-gray-600 dark:bg-zinc-400 dark:text-gray-100'>
             <tr>
               <th className='p-2'>Status</th>
               <th className='p-2'>Spend</th>

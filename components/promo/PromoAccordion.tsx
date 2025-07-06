@@ -23,15 +23,15 @@ export const PromoAccordion: React.FC<PromoAccordionProps> = ({promo, onViewRoi}
   const avgTicket = total_data.responses > 0 ? total_data.sales / total_data.responses : 0
 
   return (
-    <div className='border border-gray-300 rounded-lg shadow-sm overlow-hidden bg-white'>
+    <div className='border border-gray-300 rounded-lg shadow-sm overlow-hidden bg-white dark:bg-zinc-500 dark:text-white'>
       <button
-        className='w-full text-left px-4 py-3 flex items-center justify-between hover:bg-gray-100'
+        className='w-full text-left px-4 py-3 flex items-center justify-between hover:bg-gray-100 dark:hover:bg-gray-400'
         onClick={() => setExpanded(!expanded)}
       >
         <div className='w-full'>
           <h3 className='font-semibold text-lg'>{promo_name}</h3>
           <div className='flex items-center'>
-            <p className='text-sm text-gray-500'>
+            <p className='text-sm text-gray-500 dark:text-white'>
               {promo_dates.start} - {promo_dates.end}
             </p>
             {!expanded && (
@@ -67,7 +67,7 @@ export const PromoAccordion: React.FC<PromoAccordionProps> = ({promo, onViewRoi}
           <div className='mt-4'>
             <button
               onClick={() => onViewRoi(promo)}
-              className='px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700'
+              className='px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600'
             >
               View ROI
             </button>
@@ -80,7 +80,7 @@ export const PromoAccordion: React.FC<PromoAccordionProps> = ({promo, onViewRoi}
 
 const Metric = ({label, value}: { label: string; value: string}) => (
   <div>
-    <span className='text-gray-500'>{label}: </span>
+    <span className='text-gray-500 dark:text-white'>{label}: </span>
     <span className='font-medium'>{value}</span>
   </div>
 )

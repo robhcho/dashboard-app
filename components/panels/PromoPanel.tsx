@@ -30,24 +30,24 @@ export const PromoPanel = () => {
 
   return (
     <div className='p-4'>
-      <h2 className='text-lg font-semibold w-full'>{latestPromo.promo_name}</h2>
-      <p className='text-sm text-gray-600 mb-4'>
+      <h2 className='text-lg font-semibold w-full dark:text-white'>{latestPromo.promo_name}</h2>
+      <p className='text-sm text-gray-600 dark:text-white mb-4'>
         {dayjs(latestPromo.promo_dates.start).format('MMM DD, YYYY')} - {dayjs(latestPromo.promo_dates.end).format('MMM DD, YYYY')}
       </p>
 
       <div className='flex flex-row gap-6 justify-between items-center'>
         <div className='flex flex-col w-full lg:w-1/2 space-y-4 text-left'>
           <div>
-            <h5 className='text-xs text-cyan-600'>AVERAGE TICKET</h5>
-            <p className='font-bold text-gray-700'>${averageTicket.toLocaleString()}</p>
+            <h5 className='text-xs text-cyan-600 dark: text-cyan-300'>AVERAGE TICKET</h5>
+            <p className='font-bold text-gray-700 dark:text-white'>${averageTicket.toLocaleString()}</p>
           </div>
           <div>
-            <h5 className='text-xs text-lime-700'>INCREMENTAL SALES</h5>
-            <p className='font-bold text-gray-700'>${incrementalSales.toLocaleString()}</p>
+            <h5 className='text-xs text-lime-700 dark:text-lime-400'>INCREMENTAL SALES</h5>
+            <p className='font-bold text-gray-700 dark:text-white'>${incrementalSales.toLocaleString()}</p>
           </div>
           <div>
             <h5 className='text-xs text-pink-600'>INCREMENTAL RESPONSE RATE</h5>
-            <p className='font-bold text-gray-700'>{incrementalResponseRate.toLocaleString()}%</p>
+            <p className='font-bold text-gray-700 dark:text-white'>{incrementalResponseRate.toLocaleString()}%</p>
           </div>
         </div>
         

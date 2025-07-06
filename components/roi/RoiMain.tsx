@@ -73,12 +73,13 @@ export const RoiMain = () => {
         columns={columns}
         rows={data.cust_pros_data}
       />
-      <div className='my-8 border-2 rounded-lg p-4'>
+      <div className='my-8 border-2 rounded-lg p-4 dark:bg-zinc-500'>
         <div className='flex items-center justify-between mb-4'>
-          <h3 className='text-lg font-semibold text-gray-700 uppercase'>{selectedOption?.label} Breakdown</h3>
+          <h3 className='text-lg font-semibold text-gray-700 dark:text-white uppercase'>{selectedOption?.label} Breakdown</h3>
           <select
             value={selectedKey}
             onChange={(e) => setSelectedKey(e.target.value as 'cust_pros_data' | 'list_data')}
+            className='dark:bg-zinc-500'
           >
             {chartOptions.map((opt) => (
               <option key={opt.key} value={opt.key}>

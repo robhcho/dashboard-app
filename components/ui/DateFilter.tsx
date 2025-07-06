@@ -49,23 +49,23 @@ export const DateFilter: React.FC<DateFilterProps> = ({onDateChange}) => {
   }
 
   return (
-    <div className='bg-white rounded-lg p-4 w-fit'>
-      <label className='text-sm font-semibold text-gray-700 mb-2'>Date Range: </label>
+    <div className='bg-white dark:bg-zinc-600 rounded-lg p-4 w-fit'>
+      <label className='text-sm font-semibold text-gray-700 dark:text-white mb-2'>Date Range: </label>
       <input 
         type='text'
         readOnly
         value={`${dateRange[0].toLocaleDateString()} - ${dateRange[1].toLocaleDateString()}`}
         onClick={() => setShowCalendar((prev) => !prev)}
-        className='border border-gray-300 rounded px-3 py-2 text-sm w-[250]px cursor-pointer shadow-sm'
+        className='border border-gray-300 rounded px-3 py-2 text-sm w-[250]px cursor-pointer shadow-sm dark:bg-zinc-600'
       />
 
       {showCalendar && (
-        <div className='absolute z-50 mt-2 shadow-lg border border-gray-200 rounded bg-white'>
+        <div className='absolute z-50 mt-2 shadow-lg border border-gray-200 rounded bg-white dark:bg-zinc-600'>
           <Calendar 
             selectRange
             onChange={handleChange}
             value={dateRange}
-            className='REACT-CALENDAR p-2 rounded'
+            className='REACT-CALENDAR p-2 rounded dark:bg-zinc-600'
           />
         </div>
       )}
