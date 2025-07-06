@@ -4,7 +4,7 @@ import {
   IoCashOutline,
   IoMailOpenOutline
 } from 'react-icons/io5'
-import { CalendarPanel } from '../components/panels/CalendarPanel'
+import { MdCallMissed } from 'react-icons/md'
 
 export type PanelConfig = {
   id: number
@@ -42,5 +42,23 @@ export const dashboardPanels: PanelConfig[] = [
     colorDark: 'rgba(59, 128, 184, 0.5)',
     subheader: 'Most Recent Running Promotion',
     icon: IoMailOpenOutline,
+  },  
+  {
+    id: 4,
+    title: 'Lost Opportunities',
+    path: '/lost-opp',    
+    color: '#3b80b8',
+    colorDark: 'rgba(59, 128, 184, 0.5)',
+    subheader: '',
+    icon: MdCallMissed,
+  },  
+  {
+    id: 5,
+    title: 'Retention',
+    path: '/retention',    
+    color: '#f5c556',
+    colorDark: 'rgba(255, 190, 38, 0.5)',
+    subheader: '',
+    icon: MdCallMissed,
   },  
 ]

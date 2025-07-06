@@ -31,6 +31,9 @@ const DashboardPage = () => {
     panel.title.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
+  console.log(dashboardPanels)
+  console.log(panelOrder)
+
   const handleDragEnd = (e:any) => {
     const { active, over } = e
     if(active.id !== over?.id) {
