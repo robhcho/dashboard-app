@@ -63,7 +63,7 @@ export const CalendarPanel = () => {
         }}
         tileContent={renderTileContent}
         locale='en-US'
-        className='calendar-custom'
+        className='calendar-custom dark:bg-zinc-500 dark:text-white'
       />
     </div>
   )

@@ -35,7 +35,7 @@ export const PanelCard: React.FC<PanelCardProps> = ({
   
   return (
     <div
-      className='w-full h-[450px] md:h-[400px] lg:h-[400px] bg-white rounded-lg border shadow-md overflow-hidden flex flex-col items-center'
+      className='w-full h-[450px] md:h-[400px] lg:h-[400px] bg-white dark:bg-zinc-500 rounded-lg border shadow-md overflow-hidden flex flex-col items-center dark:text-white'
       style={{borderColor: color}}
     >
       <div

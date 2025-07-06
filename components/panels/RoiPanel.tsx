@@ -52,26 +52,26 @@ export const RoiPanel: React.FC = () => {
 
   return (
     <div className='p-4 space-y-4'>
-      <p className='text-sm text-center sm:text-base leading-relaxed mb-6'>
+      <p className='text-sm text-center sm:text-base leading-relaxed mb-6 dark:text-white'>
         On completed promotions, a total spend of{' '}
         <span className='text-red-500 font-semibold'>${Math.round(roi.total_data.Cost).toLocaleString()}</span> yielded{' '}
-        <span className='text-green-600 font-semibold'>${Math.round(roi.total_data.Sales).toLocaleString()}</span> in sales to
+        <span className='text-green-600 dark:text-green-400 font-semibold'>${Math.round(roi.total_data.Sales).toLocaleString()}</span> in sales to
         responders (at a {(roi.total_data.Response_rate * 100).toFixed(2)}% response rate)
       </p>
 
       <div className='flex flex-row gap-6 justify-between items-center'>
         <div className='flex flex-col w-full lg:w-1/2 space-y-4 text-left'>
           <div>
-            <h5 className='text-xs text-cyan-600'>AVERAGE TICKET</h5>
-            <p className='font-bold text-gray-700'>${Math.round(avgTicket).toLocaleString()}</p>
+            <h5 className='text-xs text-cyan-600 dark:text-cyan-300'>AVERAGE TICKET</h5>
+            <p className='font-bold text-gray-700 dark:text-white'>${Math.round(avgTicket).toLocaleString()}</p>
           </div>
           <div>
-            <h5 className='text-xs text-lime-700'>INCREMENTAL SALES</h5>
-            <p className='font-bold text-gray-700'>${Math.round(roi.total_data.Adj_Sales).toLocaleString()}</p>
+            <h5 className='text-xs text-lime-700 dark:text-lime-400'>INCREMENTAL SALES</h5>
+            <p className='font-bold text-gray-700 dark:text-white'>${Math.round(roi.total_data.Adj_Sales).toLocaleString()}</p>
           </div>
           <div>
             <h5 className='text-xs text-pink-600'>INCREMENTAL RESPONSES</h5>
-            <p className='font-bold text-gray-700'>${Math.round(roi.total_data.Adj_Response).toLocaleString()}</p>
+            <p className='font-bold text-gray-700 dark:text-white'>${Math.round(roi.total_data.Adj_Response).toLocaleString()}</p>
           </div>
         </div>
 

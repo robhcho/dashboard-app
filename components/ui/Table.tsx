@@ -22,7 +22,7 @@ export const RoiTable: React.FC<RoiTableProps> = ({title, columns, rows}) => {
   return (
     <div className='w-full overflow-x-auto shadow rounded-lg border border-gray-200 mt-10'>
       {title && (
-        <div className='px-4 py-2 bg-gray-100 border-b text-sm font-semibold text-gray-700'>
+        <div className='px-4 py-2 bg-gray-100 dark:bg-zinc-500 border-b text-sm font-semibold text-gray-700 dark:text-white'>
           {title}
         </div>  
       )}
@@ -32,7 +32,7 @@ export const RoiTable: React.FC<RoiTableProps> = ({title, columns, rows}) => {
             {columns.map((col) => (
               <th
                 key={col.key}
-                className={`px-4 py-2 font-semibold text-gray-600 ${
+                className={`px-4 py-2 font-semibold text-gray-600 dark:bg-zinc-500 dark:text-white ${
                   col.align === 'right'
                   ? 'text-right'
                   : col.align === 'center'
@@ -56,7 +56,7 @@ export const RoiTable: React.FC<RoiTableProps> = ({title, columns, rows}) => {
             rows.map((row, i) => (
               <tr
                 key={i}
-                className={i%2 === 0 ? 'bg-white': 'bg-gray-50'}
+                className={i%2 === 0 ? 'bg-white dark:bg-zinc-500 border-b': 'bg-gray-50 dark:bg-zinc-500'}
               >
                 {columns.map((col) => (
                   <td

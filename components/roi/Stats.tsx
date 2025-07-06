@@ -10,18 +10,18 @@ import { BsBarChartFill } from 'react-icons/bs'
 
 const stats = [
   {
-    icon: <MdCreditCard className='text-red-600 text-2xl'/>,
+    icon: <MdCreditCard className='text-red-600 dark:text-red-400 text-2xl'/>,
     label: 'Spend',
     value: '$45,000',
-    color: 'border-red-600',
+    color: 'border-red-600 dark:border-red-400',
     info: 'Total cost of mailing',
     id: 'spend-info',
   },
   {
-    icon: <MdReplyAll className='text-blue-600 text-2xl'/>,
+    icon: <MdReplyAll className='text-blue-600 dark:text-blue-400 text-2xl'/>,
     label: 'Responses',
     value: '6,800',
-    color: 'border-blue-600',
+    color: 'border-blue-600 dark:border-blue-400',
     info: '',
     id: 'responses-info',
   },
@@ -34,18 +34,18 @@ const stats = [
     id: 'sales-info',
   },
   {
-    icon: <IoMailOutline className='text-purple-600 text-2xl'/>,
+    icon: <IoMailOutline className='text-purple-600 dark:text-purple-300 text-2xl'/>,
     label: 'Mailed',
     value: '100,000',
-    color: 'border-purple-600',
+    color: 'border-purple-600 dark:border-purple-300',
     info: 'Total quantity of pieces mailed',
     id: 'mailed-info',
   },
   {
-    icon: <MdReply className='text-pink-500 text-2xl'/>,
+    icon: <MdReply className='text-pink-500 dark:text-pink-300 text-2xl'/>,
     label: 'Incremental Responses',
     value: '3,200',
-    color: 'border-pink-600',
+    color: 'border-pink-600 dark:border-pink-300',
     info: '',
     id: 'inc-responses-info',
   },
@@ -66,13 +66,13 @@ export const Stats= () => {
       {stats.map((stat, idx) => (
         <div
           key={idx}
-          className={`border-2 rounded-lg p-4 flex flex-col items-start justify-between gap-2 shadow-sm ${stat.color}`}
+          className={`border-2 rounded-lg p-4 flex flex-col items-start justify-between gap-2 shadow-sm ${stat.color} dark:bg-zinc-500`}
         >
           <div className='flex items-center gap-2'>
             {stat.icon}
-            <h3 className='text-sm font-medium text-gray-700'>{stat.label}</h3>            
+            <h3 className='text-sm font-medium text-gray-700 dark:text-white'>{stat.label}</h3>            
           </div>
-          <p className='text-xl font-semibold text-gray-900'>{stat.value}</p>
+          <p className='text-xl font-semibold text-gray-900 dark:text-white'>{stat.value}</p>
         </div>
       ))}
     </div>
