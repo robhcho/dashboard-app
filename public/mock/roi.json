@@ -7,56 +7,1578 @@
     "Adj_Response": 490,
     "Response_rate": 0.0031
   },
-  "cust_pros_data": [
+  "total_data_daily": [
     {
-      "type": "Customers",
-      "spend": 110000,
-      "sales": 1120000,
-      "mailed": 132000,
-      "responses": 910,
-      "holdout_sales": 185000,
-      "holdout_count": 22000,
-      "holdout_responses": 140,
-      "incremental_responses": 770,
-      "avg_ticket": 1230
+      "date": "2025-06-01",
+      "Cost": 12347,
+      "Sales": 63118,
+      "Adj_Sales": 20930,
+      "Response": 56,
+      "Adj_Response": 17
     },
     {
-      "type": "Prospects",
-      "spend": 275000,
-      "sales": 805000,
-      "mailed": 268000,
-      "responses": 730,
-      "holdout_sales": 82000,
-      "holdout_count": 40000,
-      "holdout_responses": 100,
-      "incremental_responses": 630,
-      "avg_ticket": 1102
+      "date": "2025-06-02",
+      "Cost": 12625,
+      "Sales": 61508,
+      "Adj_Sales": 21028,
+      "Response": 56,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-03",
+      "Cost": 12226,
+      "Sales": 65456,
+      "Adj_Sales": 21282,
+      "Response": 53,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-04",
+      "Cost": 12886,
+      "Sales": 66202,
+      "Adj_Sales": 20873,
+      "Response": 56,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-05",
+      "Cost": 13303,
+      "Sales": 65474,
+      "Adj_Sales": 21041,
+      "Response": 52,
+      "Adj_Response": 17
+    },
+    {
+      "date": "2025-06-06",
+      "Cost": 12510,
+      "Sales": 66438,
+      "Adj_Sales": 21190,
+      "Response": 56,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-07",
+      "Cost": 13374,
+      "Sales": 64116,
+      "Adj_Sales": 21110,
+      "Response": 54,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-08",
+      "Cost": 12584,
+      "Sales": 61698,
+      "Adj_Sales": 21749,
+      "Response": 53,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-09",
+      "Cost": 13198,
+      "Sales": 65613,
+      "Adj_Sales": 20897,
+      "Response": 52,
+      "Adj_Response": 17
+    },
+    {
+      "date": "2025-06-10",
+      "Cost": 12861,
+      "Sales": 64864,
+      "Adj_Sales": 20629,
+      "Response": 54,
+      "Adj_Response": 17
+    },
+    {
+      "date": "2025-06-11",
+      "Cost": 13428,
+      "Sales": 63187,
+      "Adj_Sales": 21600,
+      "Response": 53,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-12",
+      "Cost": 13212,
+      "Sales": 66599,
+      "Adj_Sales": 20018,
+      "Response": 52,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-13",
+      "Cost": 13413,
+      "Sales": 66229,
+      "Adj_Sales": 21627,
+      "Response": 55,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-14",
+      "Cost": 12317,
+      "Sales": 62981,
+      "Adj_Sales": 21357,
+      "Response": 54,
+      "Adj_Response": 17
+    },
+    {
+      "date": "2025-06-15",
+      "Cost": 12386,
+      "Sales": 66862,
+      "Adj_Sales": 21267,
+      "Response": 52,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-16",
+      "Cost": 12296,
+      "Sales": 64424,
+      "Adj_Sales": 20448,
+      "Response": 54,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-17",
+      "Cost": 12265,
+      "Sales": 63332,
+      "Adj_Sales": 20737,
+      "Response": 53,
+      "Adj_Response": 17
+    },
+    {
+      "date": "2025-06-18",
+      "Cost": 12739,
+      "Sales": 61735,
+      "Adj_Sales": 20817,
+      "Response": 53,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-19",
+      "Cost": 12703,
+      "Sales": 62795,
+      "Adj_Sales": 20899,
+      "Response": 55,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-20",
+      "Cost": 12422,
+      "Sales": 62353,
+      "Adj_Sales": 21609,
+      "Response": 56,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-21",
+      "Cost": 12615,
+      "Sales": 67060,
+      "Adj_Sales": 21857,
+      "Response": 53,
+      "Adj_Response": 17
+    },
+    {
+      "date": "2025-06-22",
+      "Cost": 13244,
+      "Sales": 65760,
+      "Adj_Sales": 21253,
+      "Response": 55,
+      "Adj_Response": 17
+    },
+    {
+      "date": "2025-06-23",
+      "Cost": 12640,
+      "Sales": 61225,
+      "Adj_Sales": 21224,
+      "Response": 54,
+      "Adj_Response": 17
+    },
+    {
+      "date": "2025-06-24",
+      "Cost": 13123,
+      "Sales": 62323,
+      "Adj_Sales": 21834,
+      "Response": 56,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-25",
+      "Cost": 12462,
+      "Sales": 61899,
+      "Adj_Sales": 20181,
+      "Response": 55,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-26",
+      "Cost": 13035,
+      "Sales": 65839,
+      "Adj_Sales": 20879,
+      "Response": 54,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-27",
+      "Cost": 12826,
+      "Sales": 61072,
+      "Adj_Sales": 21606,
+      "Response": 54,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-28",
+      "Cost": 13300,
+      "Sales": 64105,
+      "Adj_Sales": 19844,
+      "Response": 54,
+      "Adj_Response": 16
+    },
+    {
+      "date": "2025-06-29",
+      "Cost": 13158,
+      "Sales": 61273,
+      "Adj_Sales": 19906,
+      "Response": 56,
+      "Adj_Response": 17
+    },
+    {
+      "date": "2025-06-30",
+      "Cost": 13269,
+      "Sales": 65497,
+      "Adj_Sales": 20821,
+      "Response": 53,
+      "Adj_Response": 16
     }
   ],
-  "list_data": [
-    {
-      "type": "Browse Abandoned",
-      "spend": 315000,
-      "sales": 1650000,
-      "mailed": 372000,
-      "responses": 1400,
-      "holdout_sales": 230000,
-      "holdout_count": 46000,
-      "holdout_responses": 130,
-      "incremental_responses": 1150,
-      "avg_ticket": 1179
-    },
-    {
-      "type": "Cart Abandoned",
-      "spend": 70000,
-      "sales": 275000,
-      "mailed": 28000,
-      "responses": 240,
-      "holdout_sales": 37000,
-      "holdout_count": 8000,
-      "holdout_responses": 30,
-      "incremental_responses": 210,
-      "avg_ticket": 1145
-    }
-  ]
+  "cust_pros_daily": {
+    "Customers": [
+      {
+        "date": "2025-06-01",
+        "spend": 3522,
+        "sales": 37278,
+        "mailed": 4296,
+        "responses": 30,
+        "holdout_sales": 5967,
+        "holdout_count": 767,
+        "holdout_responses": 5,
+        "incremental_responses": 26
+      },
+      {
+        "date": "2025-06-02",
+        "spend": 3734,
+        "sales": 38230,
+        "mailed": 4347,
+        "responses": 30,
+        "holdout_sales": 5901,
+        "holdout_count": 729,
+        "holdout_responses": 5,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-03",
+        "spend": 3752,
+        "sales": 37325,
+        "mailed": 4547,
+        "responses": 30,
+        "holdout_sales": 6251,
+        "holdout_count": 703,
+        "holdout_responses": 5,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-04",
+        "spend": 3829,
+        "sales": 38346,
+        "mailed": 4494,
+        "responses": 31,
+        "holdout_sales": 5985,
+        "holdout_count": 727,
+        "holdout_responses": 5,
+        "incremental_responses": 26
+      },
+      {
+        "date": "2025-06-05",
+        "spend": 3678,
+        "sales": 38227,
+        "mailed": 4562,
+        "responses": 31,
+        "holdout_sales": 6188,
+        "holdout_count": 701,
+        "holdout_responses": 4,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-06",
+        "spend": 3571,
+        "sales": 37609,
+        "mailed": 4254,
+        "responses": 30,
+        "holdout_sales": 6385,
+        "holdout_count": 697,
+        "holdout_responses": 4,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-07",
+        "spend": 3721,
+        "sales": 35706,
+        "mailed": 4354,
+        "responses": 31,
+        "holdout_sales": 6394,
+        "holdout_count": 724,
+        "holdout_responses": 5,
+        "incremental_responses": 27
+      },
+      {
+        "date": "2025-06-08",
+        "spend": 3493,
+        "sales": 38063,
+        "mailed": 4483,
+        "responses": 31,
+        "holdout_sales": 6225,
+        "holdout_count": 743,
+        "holdout_responses": 5,
+        "incremental_responses": 27
+      },
+      {
+        "date": "2025-06-09",
+        "spend": 3652,
+        "sales": 38905,
+        "mailed": 4182,
+        "responses": 29,
+        "holdout_sales": 6104,
+        "holdout_count": 705,
+        "holdout_responses": 5,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-10",
+        "spend": 3831,
+        "sales": 39128,
+        "mailed": 4443,
+        "responses": 30,
+        "holdout_sales": 5931,
+        "holdout_count": 703,
+        "holdout_responses": 5,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-11",
+        "spend": 3510,
+        "sales": 39096,
+        "mailed": 4225,
+        "responses": 31,
+        "holdout_sales": 5944,
+        "holdout_count": 764,
+        "holdout_responses": 5,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-12",
+        "spend": 3807,
+        "sales": 35778,
+        "mailed": 4517,
+        "responses": 30,
+        "holdout_sales": 5973,
+        "holdout_count": 739,
+        "holdout_responses": 5,
+        "incremental_responses": 24
+      },
+      {
+        "date": "2025-06-13",
+        "spend": 3575,
+        "sales": 37172,
+        "mailed": 4556,
+        "responses": 31,
+        "holdout_sales": 6369,
+        "holdout_count": 763,
+        "holdout_responses": 5,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-14",
+        "spend": 3671,
+        "sales": 37738,
+        "mailed": 4427,
+        "responses": 30,
+        "holdout_sales": 6362,
+        "holdout_count": 760,
+        "holdout_responses": 5,
+        "incremental_responses": 26
+      },
+      {
+        "date": "2025-06-15",
+        "spend": 3532,
+        "sales": 38095,
+        "mailed": 4531,
+        "responses": 31,
+        "holdout_sales": 6025,
+        "holdout_count": 724,
+        "holdout_responses": 5,
+        "incremental_responses": 26
+      },
+      {
+        "date": "2025-06-16",
+        "spend": 3681,
+        "sales": 36431,
+        "mailed": 4188,
+        "responses": 31,
+        "holdout_sales": 6125,
+        "holdout_count": 740,
+        "holdout_responses": 5,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-17",
+        "spend": 3753,
+        "sales": 37503,
+        "mailed": 4385,
+        "responses": 30,
+        "holdout_sales": 6101,
+        "holdout_count": 718,
+        "holdout_responses": 5,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-18",
+        "spend": 3526,
+        "sales": 37652,
+        "mailed": 4361,
+        "responses": 29,
+        "holdout_sales": 6002,
+        "holdout_count": 730,
+        "holdout_responses": 4,
+        "incremental_responses": 26
+      },
+      {
+        "date": "2025-06-19",
+        "spend": 3738,
+        "sales": 36109,
+        "mailed": 4380,
+        "responses": 31,
+        "holdout_sales": 6364,
+        "holdout_count": 739,
+        "holdout_responses": 4,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-20",
+        "spend": 3645,
+        "sales": 36438,
+        "mailed": 4322,
+        "responses": 32,
+        "holdout_sales": 6265,
+        "holdout_count": 704,
+        "holdout_responses": 5,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-21",
+        "spend": 3649,
+        "sales": 35523,
+        "mailed": 4422,
+        "responses": 30,
+        "holdout_sales": 6224,
+        "holdout_count": 741,
+        "holdout_responses": 5,
+        "incremental_responses": 27
+      },
+      {
+        "date": "2025-06-22",
+        "spend": 3544,
+        "sales": 36003,
+        "mailed": 4513,
+        "responses": 32,
+        "holdout_sales": 6074,
+        "holdout_count": 735,
+        "holdout_responses": 5,
+        "incremental_responses": 27
+      },
+      {
+        "date": "2025-06-23",
+        "spend": 3713,
+        "sales": 35838,
+        "mailed": 4427,
+        "responses": 30,
+        "holdout_sales": 5937,
+        "holdout_count": 706,
+        "holdout_responses": 5,
+        "incremental_responses": 26
+      },
+      {
+        "date": "2025-06-24",
+        "spend": 3637,
+        "sales": 35972,
+        "mailed": 4333,
+        "responses": 30,
+        "holdout_sales": 6245,
+        "holdout_count": 755,
+        "holdout_responses": 4,
+        "incremental_responses": 26
+      },
+      {
+        "date": "2025-06-25",
+        "spend": 3611,
+        "sales": 36281,
+        "mailed": 4452,
+        "responses": 31,
+        "holdout_sales": 6002,
+        "holdout_count": 769,
+        "holdout_responses": 5,
+        "incremental_responses": 25
+      },
+      {
+        "date": "2025-06-26",
+        "spend": 3779,
+        "sales": 36763,
+        "mailed": 4310,
+        "responses": 31,
+        "holdout_sales": 5929,
+        "holdout_count": 753,
+        "holdout_responses": 5,
+        "incremental_responses": 26
+      },
+      {
+        "date": "2025-06-27",
+        "spend": 3510,
+        "sales": 37574,
+        "mailed": 4283,
+        "responses": 32,
+        "holdout_sales": 5969,
+        "holdout_count": 724,
+        "holdout_responses": 5,
+        "incremental_responses": 27
+      },
+      {
+        "date": "2025-06-28",
+        "spend": 3511,
+        "sales": 38588,
+        "mailed": 4333,
+        "responses": 30,
+        "holdout_sales": 6465,
+        "holdout_count": 754,
+        "holdout_responses": 5,
+        "incremental_responses": 26
+      },
+      {
+        "date": "2025-06-29",
+        "spend": 3568,
+        "sales": 36493,
+        "mailed": 4388,
+        "responses": 30,
+        "holdout_sales": 6252,
+        "holdout_count": 715,
+        "holdout_responses": 5,
+        "incremental_responses": 27
+      },
+      {
+        "date": "2025-06-30",
+        "spend": 3751,
+        "sales": 39041,
+        "mailed": 4182,
+        "responses": 29,
+        "holdout_sales": 6118,
+        "holdout_count": 707,
+        "holdout_responses": 5,
+        "incremental_responses": 26
+      }
+    ],
+    "Prospects": [
+      {
+        "date": "2025-06-01",
+        "spend": 8772,
+        "sales": 27645,
+        "mailed": 8961,
+        "responses": 23,
+        "holdout_sales": 2834,
+        "holdout_count": 1330,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-02",
+        "spend": 9003,
+        "sales": 26530,
+        "mailed": 9285,
+        "responses": 25,
+        "holdout_sales": 2703,
+        "holdout_count": 1392,
+        "holdout_responses": 3,
+        "incremental_responses": 22
+      },
+      {
+        "date": "2025-06-03",
+        "spend": 9425,
+        "sales": 25736,
+        "mailed": 9318,
+        "responses": 24,
+        "holdout_sales": 2843,
+        "holdout_count": 1316,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-04",
+        "spend": 8928,
+        "sales": 26019,
+        "mailed": 8768,
+        "responses": 24,
+        "holdout_sales": 2730,
+        "holdout_count": 1353,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-05",
+        "spend": 9334,
+        "sales": 26492,
+        "mailed": 8957,
+        "responses": 24,
+        "holdout_sales": 2796,
+        "holdout_count": 1325,
+        "holdout_responses": 3,
+        "incremental_responses": 22
+      },
+      {
+        "date": "2025-06-06",
+        "spend": 9268,
+        "sales": 25742,
+        "mailed": 9257,
+        "responses": 24,
+        "holdout_sales": 2710,
+        "holdout_count": 1327,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-07",
+        "spend": 8910,
+        "sales": 26342,
+        "mailed": 9126,
+        "responses": 23,
+        "holdout_sales": 2727,
+        "holdout_count": 1360,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-08",
+        "spend": 9526,
+        "sales": 26388,
+        "mailed": 8864,
+        "responses": 24,
+        "holdout_sales": 2849,
+        "holdout_count": 1385,
+        "holdout_responses": 3,
+        "incremental_responses": 22
+      },
+      {
+        "date": "2025-06-09",
+        "spend": 9112,
+        "sales": 26389,
+        "mailed": 9093,
+        "responses": 24,
+        "holdout_sales": 2760,
+        "holdout_count": 1375,
+        "holdout_responses": 3,
+        "incremental_responses": 22
+      },
+      {
+        "date": "2025-06-10",
+        "spend": 9607,
+        "sales": 27399,
+        "mailed": 9215,
+        "responses": 24,
+        "holdout_sales": 2622,
+        "holdout_count": 1315,
+        "holdout_responses": 3,
+        "incremental_responses": 22
+      },
+      {
+        "date": "2025-06-11",
+        "spend": 9257,
+        "sales": 27952,
+        "mailed": 8796,
+        "responses": 23,
+        "holdout_sales": 2786,
+        "holdout_count": 1278,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-12",
+        "spend": 8732,
+        "sales": 26408,
+        "mailed": 8871,
+        "responses": 25,
+        "holdout_sales": 2619,
+        "holdout_count": 1294,
+        "holdout_responses": 3,
+        "incremental_responses": 20
+      },
+      {
+        "date": "2025-06-13",
+        "spend": 9042,
+        "sales": 25572,
+        "mailed": 9215,
+        "responses": 24,
+        "holdout_sales": 2738,
+        "holdout_count": 1274,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-14",
+        "spend": 9413,
+        "sales": 26146,
+        "mailed": 8798,
+        "responses": 25,
+        "holdout_sales": 2847,
+        "holdout_count": 1319,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-15",
+        "spend": 9035,
+        "sales": 25899,
+        "mailed": 8851,
+        "responses": 24,
+        "holdout_sales": 2689,
+        "holdout_count": 1378,
+        "holdout_responses": 3,
+        "incremental_responses": 20
+      },
+      {
+        "date": "2025-06-16",
+        "spend": 8985,
+        "sales": 26490,
+        "mailed": 8916,
+        "responses": 23,
+        "holdout_sales": 2755,
+        "holdout_count": 1395,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-17",
+        "spend": 8955,
+        "sales": 27650,
+        "mailed": 8716,
+        "responses": 25,
+        "holdout_sales": 2773,
+        "holdout_count": 1309,
+        "holdout_responses": 3,
+        "incremental_responses": 22
+      },
+      {
+        "date": "2025-06-18",
+        "spend": 9509,
+        "sales": 27918,
+        "mailed": 8544,
+        "responses": 24,
+        "holdout_sales": 2775,
+        "holdout_count": 1308,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-19",
+        "spend": 8939,
+        "sales": 26998,
+        "mailed": 8813,
+        "responses": 24,
+        "holdout_sales": 2789,
+        "holdout_count": 1378,
+        "holdout_responses": 3,
+        "incremental_responses": 20
+      },
+      {
+        "date": "2025-06-20",
+        "spend": 9395,
+        "sales": 26676,
+        "mailed": 8847,
+        "responses": 23,
+        "holdout_sales": 2854,
+        "holdout_count": 1384,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-21",
+        "spend": 9139,
+        "sales": 27800,
+        "mailed": 8922,
+        "responses": 24,
+        "holdout_sales": 2749,
+        "holdout_count": 1359,
+        "holdout_responses": 3,
+        "incremental_responses": 22
+      },
+      {
+        "date": "2025-06-22",
+        "spend": 9539,
+        "sales": 26016,
+        "mailed": 8493,
+        "responses": 25,
+        "holdout_sales": 2599,
+        "holdout_count": 1399,
+        "holdout_responses": 3,
+        "incremental_responses": 20
+      },
+      {
+        "date": "2025-06-23",
+        "spend": 9100,
+        "sales": 26050,
+        "mailed": 9219,
+        "responses": 24,
+        "holdout_sales": 2675,
+        "holdout_count": 1333,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-24",
+        "spend": 8811,
+        "sales": 25644,
+        "mailed": 8534,
+        "responses": 24,
+        "holdout_sales": 2856,
+        "holdout_count": 1269,
+        "holdout_responses": 3,
+        "incremental_responses": 22
+      },
+      {
+        "date": "2025-06-25",
+        "spend": 9206,
+        "sales": 26957,
+        "mailed": 8807,
+        "responses": 24,
+        "holdout_sales": 2793,
+        "holdout_count": 1293,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-26",
+        "spend": 9530,
+        "sales": 26981,
+        "mailed": 8524,
+        "responses": 25,
+        "holdout_sales": 2728,
+        "holdout_count": 1336,
+        "holdout_responses": 3,
+        "incremental_responses": 22
+      },
+      {
+        "date": "2025-06-27",
+        "spend": 9346,
+        "sales": 27663,
+        "mailed": 8655,
+        "responses": 24,
+        "holdout_sales": 2817,
+        "holdout_count": 1374,
+        "holdout_responses": 3,
+        "incremental_responses": 20
+      },
+      {
+        "date": "2025-06-28",
+        "spend": 9413,
+        "sales": 25763,
+        "mailed": 8819,
+        "responses": 25,
+        "holdout_sales": 2847,
+        "holdout_count": 1311,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      },
+      {
+        "date": "2025-06-29",
+        "spend": 9080,
+        "sales": 27864,
+        "mailed": 9237,
+        "responses": 25,
+        "holdout_sales": 2631,
+        "holdout_count": 1352,
+        "holdout_responses": 3,
+        "incremental_responses": 20
+      },
+      {
+        "date": "2025-06-30",
+        "spend": 9488,
+        "sales": 26054,
+        "mailed": 9016,
+        "responses": 25,
+        "holdout_sales": 2681,
+        "holdout_count": 1273,
+        "holdout_responses": 3,
+        "incremental_responses": 21
+      }
+    ]
+  },
+  "list_data_daily": {
+    "Browse_Abandoned": [
+      {
+        "date": "2025-06-01",
+        "spend": 10097,
+        "sales": 54484,
+        "mailed": 11938,
+        "responses": 45,
+        "holdout_sales": 7871,
+        "holdout_count": 1551,
+        "holdout_responses": 4,
+        "incremental_responses": 38
+      },
+      {
+        "date": "2025-06-02",
+        "spend": 10896,
+        "sales": 52972,
+        "mailed": 12651,
+        "responses": 45,
+        "holdout_sales": 7345,
+        "holdout_count": 1544,
+        "holdout_responses": 4,
+        "incremental_responses": 39
+      },
+      {
+        "date": "2025-06-03",
+        "spend": 10430,
+        "sales": 52498,
+        "mailed": 12106,
+        "responses": 46,
+        "holdout_sales": 7692,
+        "holdout_count": 1552,
+        "holdout_responses": 4,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-04",
+        "spend": 10912,
+        "sales": 54101,
+        "mailed": 12336,
+        "responses": 45,
+        "holdout_sales": 7910,
+        "holdout_count": 1506,
+        "holdout_responses": 4,
+        "incremental_responses": 40
+      },
+      {
+        "date": "2025-06-05",
+        "spend": 10666,
+        "sales": 54061,
+        "mailed": 11891,
+        "responses": 45,
+        "holdout_sales": 7681,
+        "holdout_count": 1553,
+        "holdout_responses": 4,
+        "incremental_responses": 38
+      },
+      {
+        "date": "2025-06-06",
+        "spend": 11001,
+        "sales": 52829,
+        "mailed": 12655,
+        "responses": 47,
+        "holdout_sales": 7943,
+        "holdout_count": 1477,
+        "holdout_responses": 4,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-07",
+        "spend": 10155,
+        "sales": 55031,
+        "mailed": 12778,
+        "responses": 45,
+        "holdout_sales": 7376,
+        "holdout_count": 1475,
+        "holdout_responses": 4,
+        "incremental_responses": 38
+      },
+      {
+        "date": "2025-06-08",
+        "spend": 10523,
+        "sales": 55296,
+        "mailed": 12581,
+        "responses": 48,
+        "holdout_sales": 7542,
+        "holdout_count": 1609,
+        "holdout_responses": 4,
+        "incremental_responses": 38
+      },
+      {
+        "date": "2025-06-09",
+        "spend": 10158,
+        "sales": 57541,
+        "mailed": 12760,
+        "responses": 46,
+        "holdout_sales": 7845,
+        "holdout_count": 1597,
+        "holdout_responses": 4,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-10",
+        "spend": 10410,
+        "sales": 56134,
+        "mailed": 12533,
+        "responses": 47,
+        "holdout_sales": 7633,
+        "holdout_count": 1511,
+        "holdout_responses": 4,
+        "incremental_responses": 39
+      },
+      {
+        "date": "2025-06-11",
+        "spend": 10087,
+        "sales": 57488,
+        "mailed": 12924,
+        "responses": 46,
+        "holdout_sales": 7687,
+        "holdout_count": 1469,
+        "holdout_responses": 4,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-12",
+        "spend": 10105,
+        "sales": 52462,
+        "mailed": 12971,
+        "responses": 48,
+        "holdout_sales": 7740,
+        "holdout_count": 1508,
+        "holdout_responses": 4,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-13",
+        "spend": 10078,
+        "sales": 55786,
+        "mailed": 12646,
+        "responses": 47,
+        "holdout_sales": 7666,
+        "holdout_count": 1567,
+        "holdout_responses": 4,
+        "incremental_responses": 39
+      },
+      {
+        "date": "2025-06-14",
+        "spend": 10508,
+        "sales": 53240,
+        "mailed": 12731,
+        "responses": 49,
+        "holdout_sales": 7891,
+        "holdout_count": 1487,
+        "holdout_responses": 4,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-15",
+        "spend": 10173,
+        "sales": 54184,
+        "mailed": 12796,
+        "responses": 47,
+        "holdout_sales": 8047,
+        "holdout_count": 1482,
+        "holdout_responses": 4,
+        "incremental_responses": 38
+      },
+      {
+        "date": "2025-06-16",
+        "spend": 10001,
+        "sales": 56570,
+        "mailed": 12035,
+        "responses": 46,
+        "holdout_sales": 7481,
+        "holdout_count": 1562,
+        "holdout_responses": 4,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-17",
+        "spend": 10973,
+        "sales": 54331,
+        "mailed": 12485,
+        "responses": 45,
+        "holdout_sales": 7504,
+        "holdout_count": 1568,
+        "holdout_responses": 4,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-18",
+        "spend": 10171,
+        "sales": 53394,
+        "mailed": 12760,
+        "responses": 46,
+        "holdout_sales": 7447,
+        "holdout_count": 1560,
+        "holdout_responses": 4,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-19",
+        "spend": 10650,
+        "sales": 52295,
+        "mailed": 12462,
+        "responses": 47,
+        "holdout_sales": 8033,
+        "holdout_count": 1531,
+        "holdout_responses": 4,
+        "incremental_responses": 38
+      },
+      {
+        "date": "2025-06-20",
+        "spend": 10931,
+        "sales": 54914,
+        "mailed": 12567,
+        "responses": 48,
+        "holdout_sales": 7984,
+        "holdout_count": 1567,
+        "holdout_responses": 4,
+        "incremental_responses": 38
+      },
+      {
+        "date": "2025-06-21",
+        "spend": 10714,
+        "sales": 57262,
+        "mailed": 12272,
+        "responses": 46,
+        "holdout_sales": 7894,
+        "holdout_count": 1480,
+        "holdout_responses": 4,
+        "incremental_responses": 39
+      },
+      {
+        "date": "2025-06-22",
+        "spend": 10590,
+        "sales": 54203,
+        "mailed": 11970,
+        "responses": 47,
+        "holdout_sales": 7545,
+        "holdout_count": 1599,
+        "holdout_responses": 4,
+        "incremental_responses": 38
+      },
+      {
+        "date": "2025-06-23",
+        "spend": 10768,
+        "sales": 56334,
+        "mailed": 12724,
+        "responses": 45,
+        "holdout_sales": 7715,
+        "holdout_count": 1460,
+        "holdout_responses": 4,
+        "incremental_responses": 39
+      },
+      {
+        "date": "2025-06-24",
+        "spend": 10674,
+        "sales": 52938,
+        "mailed": 11939,
+        "responses": 49,
+        "holdout_sales": 7953,
+        "holdout_count": 1565,
+        "holdout_responses": 4,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-25",
+        "spend": 10289,
+        "sales": 54848,
+        "mailed": 12895,
+        "responses": 47,
+        "holdout_sales": 7729,
+        "holdout_count": 1494,
+        "holdout_responses": 4,
+        "incremental_responses": 39
+      },
+      {
+        "date": "2025-06-26",
+        "spend": 10363,
+        "sales": 53281,
+        "mailed": 12374,
+        "responses": 46,
+        "holdout_sales": 7651,
+        "holdout_count": 1603,
+        "holdout_responses": 5,
+        "incremental_responses": 37
+      },
+      {
+        "date": "2025-06-27",
+        "spend": 10421,
+        "sales": 57542,
+        "mailed": 12586,
+        "responses": 49,
+        "holdout_sales": 7743,
+        "holdout_count": 1543,
+        "holdout_responses": 4,
+        "incremental_responses": 40
+      },
+      {
+        "date": "2025-06-28",
+        "spend": 10118,
+        "sales": 54235,
+        "mailed": 12841,
+        "responses": 48,
+        "holdout_sales": 7287,
+        "holdout_count": 1493,
+        "holdout_responses": 4,
+        "incremental_responses": 39
+      },
+      {
+        "date": "2025-06-29",
+        "spend": 10080,
+        "sales": 53096,
+        "mailed": 12993,
+        "responses": 45,
+        "holdout_sales": 7678,
+        "holdout_count": 1557,
+        "holdout_responses": 4,
+        "incremental_responses": 39
+      },
+      {
+        "date": "2025-06-30",
+        "spend": 10854,
+        "sales": 52721,
+        "mailed": 12917,
+        "responses": 45,
+        "holdout_sales": 7812,
+        "holdout_count": 1522,
+        "holdout_responses": 5,
+        "incremental_responses": 39
+      }
+    ],
+    "Cart_Abandoned": [
+      {
+        "date": "2025-06-01",
+        "spend": 2419,
+        "sales": 9569,
+        "mailed": 973,
+        "responses": 8,
+        "holdout_sales": 1191,
+        "holdout_count": 279,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-02",
+        "spend": 2335,
+        "sales": 8811,
+        "mailed": 919,
+        "responses": 8,
+        "holdout_sales": 1183,
+        "holdout_count": 265,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-03",
+        "spend": 2261,
+        "sales": 9066,
+        "mailed": 919,
+        "responses": 8,
+        "holdout_sales": 1291,
+        "holdout_count": 272,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-04",
+        "spend": 2416,
+        "sales": 8954,
+        "mailed": 973,
+        "responses": 8,
+        "holdout_sales": 1221,
+        "holdout_count": 278,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-05",
+        "spend": 2264,
+        "sales": 9403,
+        "mailed": 922,
+        "responses": 8,
+        "holdout_sales": 1219,
+        "holdout_count": 268,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-06",
+        "spend": 2326,
+        "sales": 8951,
+        "mailed": 940,
+        "responses": 8,
+        "holdout_sales": 1239,
+        "holdout_count": 279,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-07",
+        "spend": 2314,
+        "sales": 8750,
+        "mailed": 971,
+        "responses": 8,
+        "holdout_sales": 1229,
+        "holdout_count": 263,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-08",
+        "spend": 2383,
+        "sales": 9018,
+        "mailed": 905,
+        "responses": 8,
+        "holdout_sales": 1271,
+        "holdout_count": 276,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-09",
+        "spend": 2242,
+        "sales": 9044,
+        "mailed": 900,
+        "responses": 8,
+        "holdout_sales": 1252,
+        "holdout_count": 263,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-10",
+        "spend": 2349,
+        "sales": 9556,
+        "mailed": 959,
+        "responses": 8,
+        "holdout_sales": 1277,
+        "holdout_count": 268,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-11",
+        "spend": 2333,
+        "sales": 9039,
+        "mailed": 891,
+        "responses": 8,
+        "holdout_sales": 1180,
+        "holdout_count": 255,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-12",
+        "spend": 2429,
+        "sales": 9212,
+        "mailed": 899,
+        "responses": 8,
+        "holdout_sales": 1262,
+        "holdout_count": 266,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-13",
+        "spend": 2333,
+        "sales": 8853,
+        "mailed": 905,
+        "responses": 8,
+        "holdout_sales": 1213,
+        "holdout_count": 269,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-14",
+        "spend": 2222,
+        "sales": 8886,
+        "mailed": 889,
+        "responses": 8,
+        "holdout_sales": 1281,
+        "holdout_count": 273,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-15",
+        "spend": 2243,
+        "sales": 8791,
+        "mailed": 906,
+        "responses": 8,
+        "holdout_sales": 1193,
+        "holdout_count": 280,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-16",
+        "spend": 2412,
+        "sales": 9304,
+        "mailed": 972,
+        "responses": 8,
+        "holdout_sales": 1247,
+        "holdout_count": 277,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-17",
+        "spend": 2255,
+        "sales": 9463,
+        "mailed": 953,
+        "responses": 8,
+        "holdout_sales": 1189,
+        "holdout_count": 262,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-18",
+        "spend": 2244,
+        "sales": 9546,
+        "mailed": 957,
+        "responses": 8,
+        "holdout_sales": 1291,
+        "holdout_count": 266,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-19",
+        "spend": 2342,
+        "sales": 9266,
+        "mailed": 914,
+        "responses": 8,
+        "holdout_sales": 1202,
+        "holdout_count": 257,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-20",
+        "spend": 2332,
+        "sales": 9587,
+        "mailed": 967,
+        "responses": 8,
+        "holdout_sales": 1260,
+        "holdout_count": 271,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-21",
+        "spend": 2270,
+        "sales": 8852,
+        "mailed": 910,
+        "responses": 8,
+        "holdout_sales": 1259,
+        "holdout_count": 263,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-22",
+        "spend": 2420,
+        "sales": 9465,
+        "mailed": 973,
+        "responses": 8,
+        "holdout_sales": 1178,
+        "holdout_count": 254,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-23",
+        "spend": 2437,
+        "sales": 9355,
+        "mailed": 904,
+        "responses": 8,
+        "holdout_sales": 1216,
+        "holdout_count": 261,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-24",
+        "spend": 2362,
+        "sales": 9526,
+        "mailed": 972,
+        "responses": 8,
+        "holdout_sales": 1258,
+        "holdout_count": 259,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-25",
+        "spend": 2408,
+        "sales": 9109,
+        "mailed": 956,
+        "responses": 8,
+        "holdout_sales": 1195,
+        "holdout_count": 257,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-26",
+        "spend": 2319,
+        "sales": 8935,
+        "mailed": 910,
+        "responses": 8,
+        "holdout_sales": 1199,
+        "holdout_count": 258,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-27",
+        "spend": 2230,
+        "sales": 8736,
+        "mailed": 927,
+        "responses": 8,
+        "holdout_sales": 1175,
+        "holdout_count": 269,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-28",
+        "spend": 2425,
+        "sales": 8857,
+        "mailed": 964,
+        "responses": 8,
+        "holdout_sales": 1209,
+        "holdout_count": 266,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-29",
+        "spend": 2303,
+        "sales": 9350,
+        "mailed": 935,
+        "responses": 8,
+        "holdout_sales": 1267,
+        "holdout_count": 258,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      },
+      {
+        "date": "2025-06-30",
+        "spend": 2382,
+        "sales": 9257,
+        "mailed": 941,
+        "responses": 8,
+        "holdout_sales": 1223,
+        "holdout_count": 264,
+        "holdout_responses": 1,
+        "incremental_responses": 7
+      }
+    ]
+  }
 }

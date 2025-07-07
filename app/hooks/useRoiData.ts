@@ -20,12 +20,19 @@ export type BreakdownData = {
   holdout_responses: number
   incremental_responses: number
   avg_ticket: number
+  date: string
 }
 
 export type RoiData = {
   total_data: TotalData,
-  cust_pros_data: BreakdownData[]
-  list_data: BreakdownData[]
+  cust_pros_daily: {
+    Customers: BreakdownData[],
+    Prospects: BreakdownData[]
+  }
+  list_data_daily: {
+    Browse_Abandoned: BreakdownData[],
+    Cart_Abandoned: BreakdownData[]
+  }
 }
 
 export const useRoiData = () => {

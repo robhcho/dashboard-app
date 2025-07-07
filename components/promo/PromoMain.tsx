@@ -21,9 +21,20 @@ export const PromoPage = () => {
   const [compareSelectedPromo, setCompareSelectedPromo] = useState<Promo | null>(null)
   const {promos, loading, error} = usePromoData()
 
-  const filteredPromos = (promos ?? []).filter((promo) => 
-    promo.promo_name.toLowerCase().includes(searchTerm.toLowerCase())
-  )
+  const filteredPromos = (promos ?? []).filter((promo) => {
+    const promoStart = new Date(promo.promo_dates.start)
+    const promoEnd = new Date(promo.promo_dates.end)
+    const [rangeStart, rangeEnd] = dateRange
+
+    return (
+      promo.promo_name.toLowerCase().includes(searchTerm.toLowerCase()) &&
+      (
+        (promoStart >= rangeStart && promoStart <= rangeEnd) ||
+        (promoEnd >= rangeStart && promoEnd <= rangeEnd) ||
+        (promoStart <= rangeStart && promoEnd >= rangeEnd)
+      )
+    )
+  })
 
   const handleViewRoi = (promo: Promo) => {
     setSelectedPromo(promo)
