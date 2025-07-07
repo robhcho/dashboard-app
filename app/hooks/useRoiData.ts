@@ -9,6 +9,16 @@ export type TotalData = {
   Response_rate: number
 }
 
+export type DailyStat = {
+  date: string
+  Cost: number
+  Sales: number
+  Adj_Sales: number
+  Response: number
+  Adj_Response: number
+  Mailed: number
+}
+
 export type BreakdownData = {
   type: string
   spend: number
@@ -24,7 +34,8 @@ export type BreakdownData = {
 }
 
 export type RoiData = {
-  total_data: TotalData,
+  total_data: TotalData
+  total_data_daily: DailyStat[]
   cust_pros_daily: {
     Customers: BreakdownData[],
     Prospects: BreakdownData[]
@@ -40,9 +51,7 @@ export const useRoiData = () => {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<null | string>(null)
 
-  useEffect(() => {
-    // const today = dayjs().format('YYYY-MM-DD')
-    // const twelveMonthsAgo = dayjs().subtract(12, 'month').format('YYYY-MM-DD')
+  useEffect(() => {    
     const fetchData = async () => {
       try {
         const res = await fetch('/mock/roi.json')

@@ -150,7 +150,7 @@ export const RoiMain = () => {
         <h4 className='flex items-center text-lg'><RiExchangeDollarFill className='mr-1'/> ROI</h4>
         <DateFilter onDateChange={handleDateChange} />
       </div>
-      <Stats />
+      <Stats data={data.total_data_daily} dateRange={dateRange} />
       <RoiTable 
         title="Customers vs Prospects"
         columns={columns}
