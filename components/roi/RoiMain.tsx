@@ -148,7 +148,7 @@ export const RoiMain = () => {
     <div className='pt-5'>
       <div className='mb-3 flex justify-between items-center'>
         <h4 className='flex items-center text-lg'><RiExchangeDollarFill className='mr-1'/> ROI</h4>
-        <DateFilter onDateChange={handleDateChange} />
+        <DateFilter onDateChange={handleDateChange} minDate={new Date('2025-06-01')} maxDate={new Date('2025-07-06')}/>
       </div>
       <Stats data={data.total_data_daily} dateRange={dateRange} />
       <RoiTable 

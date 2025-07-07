@@ -6,9 +6,12 @@ import 'react-calendar/dist/Calendar.css'
 
 type DateFilterProps = {
   onDateChange: (range: [Date, Date]) => void
+  minDate?: Date
+  maxDate?: Date
+
 }
 
-export const DateFilter: React.FC<DateFilterProps> = ({onDateChange}) => {
+export const DateFilter: React.FC<DateFilterProps> = ({onDateChange, minDate, maxDate}) => {
   const [dateRange, setDateRange] = useState<[Date, Date]>([
     new Date(new Date().setMonth(new Date().getMonth() - 1)),
     new Date()
@@ -61,13 +64,12 @@ export const DateFilter: React.FC<DateFilterProps> = ({onDateChange}) => {
             selectRange
             onChange={handleChange}
             value={dateRange}
+            minDate={minDate}
+            maxDate={maxDate}
             className='REACT-CALENDAR p-2 rounded dark:bg-zinc-600'
           />
         </div>
-      )}
-      {/* <div className='mt-2 text-sm text-gray-600'>
-        {dateRange[0].toLocaleDateString()} - {dateRange[1].toLocaleDateString()}
-      </div> */}
+      )}      
     </div>
   )
 }
