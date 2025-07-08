@@ -52,17 +52,15 @@ export const PanelCard: React.FC<PanelCardProps> = ({
           )}
         </div>
 
-        {title !== 'Calendar' && (
-          <button
-            ref={setDragHandleRef}
-            {...dragAttributes}
-            {...dragListeners}
-            className='text-white opacity-70 hover:opacity-100 cursor-grab'
-            style={style}
-          >
-            <RiDragMoveFill />
-          </button>
-        )}
+        <button
+          ref={setDragHandleRef}
+          {...dragAttributes}
+          {...dragListeners}
+          className='text-white opacity-70 hover:opacity-100 cursor-grab'
+          style={style}
+        >
+          <RiDragMoveFill />
+        </button>
       </div>
       <div className='p-4 text-sm text-gray-600 flex-grow glex items-start w-full h-full'>
         {PanelComponent ? <PanelComponent /> : <p>No content available</p>}

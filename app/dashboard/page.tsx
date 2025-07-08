@@ -10,7 +10,6 @@ import { setPanelOrder } from '@/features/dashboardSlice'
 import { SortablePanel } from '@/components/dashboard/SortablePanel'
 import { WelcomeBoard } from '@/components/dashboard/Welcome'
 import { MdSpaceDashboard } from 'react-icons/md'
-import { RiFunctionAddLine } from 'react-icons/ri'
 
 
 const DashboardPage = () => {
@@ -54,61 +53,38 @@ const DashboardPage = () => {
           <MdSpaceDashboard className='mr-1'/>
           Dashboard
         </div>
-        <div className='flex items-center mr-4'>
-          <input 
-            type='text'
-            placeholder='Search'
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className='w-[200px] border rounded-md mr-3 px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-600'
-          />
-          <button onClick={() => console.log('add panel')}>
-            <RiFunctionAddLine size={18}/>
-          </button>
-        </div>
+        <input 
+          type='text'
+          placeholder='Search'
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className='w-[200px] border rounded-md mr-4 px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-600'
+        />
       </div>
       <WelcomeBoard user='User' companyName='Company' />
-      
-      <div className='p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6'>
-        {(() => {
-          const fixedPanel = dashboardPanels.find(p => p.id === panelOrder[0])
-          if (!fixedPanel) return null
-          return (
-            <PanelCard 
-              key={fixedPanel.id}
-              panel={fixedPanel}
-              title={fixedPanel.title}
-              path={fixedPanel.path.replace('/', '')}
-              icon={fixedPanel.icon}
-              color={fixedPanel.color}
-              colorDark={fixedPanel.colorDark}
-              subheader={fixedPanel.subheader}
-            />
-          )
-        })()}
-        
-        <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
-          <SortableContext items={panelOrder.slice(1)} strategy={verticalListSortingStrategy}>
-              {panelOrder.slice(1).map(id => {
-                const panel = filteredDashPanels.find(p => p.id === id)
-                if(!panel) return null
-                return (
-                  <SortablePanel key={id} id={id}>
-                    <PanelCard                 
-                      panel={panel} 
-                      title={panel.title}
-                      path={panel.path.replace('/', '')}
-                      icon={panel.icon}
-                      color={panel.color}
-                      colorDark={panel.colorDark}
-                      subheader={panel.subheader}
-                    />
-                  </SortablePanel>
-                )
-              })}             
-          </SortableContext>
-        </DndContext>
-      </div>
+      <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+        <SortableContext items={panelOrder} strategy={verticalListSortingStrategy}>
+          <div className='p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6'>
+            {panelOrder.map(id => {
+              const panel = filteredDashPanels.find(p => p.id === id)
+              if(!panel) return null
+              return (
+                <SortablePanel key={id} id={id}>
+                  <PanelCard                 
+                    panel={panel} 
+                    title={panel.title}
+                    path={panel.path.replace('/', '')}
+                    icon={panel.icon}
+                    color={panel.color}
+                    colorDark={panel.colorDark}
+                    subheader={panel.subheader}
+                  />
+                </SortablePanel>
+              )
+            })}             
+          </div>
+        </SortableContext>
+      </DndContext>
     </>
   )
 }
