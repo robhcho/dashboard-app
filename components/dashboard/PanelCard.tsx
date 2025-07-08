@@ -6,8 +6,12 @@ import { panelComponentMap } from '../panels'
 import { RiDragMoveFill } from 'react-icons/ri'
 import { SyntheticListenerMap } from '@dnd-kit/core/dist/hooks/utilities'
 import { DraggableAttributes } from '@dnd-kit/core'
+import { useAppDispatch } from '@/lib/hooks'
+import { removePanel } from '@/features/dashboardSlice'
+import { TiDeleteOutline } from 'react-icons/ti'
 
 type PanelCardProps = {
+  id: number
   title: string
   path: string
   color: string  
@@ -27,10 +31,11 @@ const style = {
 }
 
 export const PanelCard: React.FC<PanelCardProps> = ({ 
-  title, path, icon, subheader, color, dragListeners, dragAttributes, setDragHandleRef 
+  id, title, path, icon, subheader, color, dragListeners, dragAttributes, setDragHandleRef 
 }) => {  
   const Icon = icon
   const PanelComponent = panelComponentMap[path]
+  const dispatch = useAppDispatch()
   
   return (
     <div
@@ -52,15 +57,33 @@ export const PanelCard: React.FC<PanelCardProps> = ({
         </div>
 
         {title !== 'Calendar' && (
-          <button
-            ref={setDragHandleRef}
-            {...dragAttributes}
-            {...dragListeners}
-            className='text-white opacity-70 hover:opacity-100 cursor-grab'
-            style={style}
-          >
-            <RiDragMoveFill />
-          </button>
+          <div className='flex items-center'>
+            <div className='group'>
+              <button
+                ref={setDragHandleRef}
+                {...dragAttributes}
+                {...dragListeners}
+                className='text-white opacity-70 hover:opacity-100 cursor-grab'
+                style={style}
+              >
+                <RiDragMoveFill />
+              </button>
+              <div className='absolute mt-1 hidden group-hover:block bg-gray-700 text-white text-xs px-2 py-1 rounded'>
+                Hold & Drag
+              </div>
+            </div>
+
+          <div className='group'>
+            <button
+              onClick={() => dispatch(removePanel(id))}
+            >
+              <TiDeleteOutline className='ml-3 text-white opacity-70'/>
+            </button>
+            <div className='absolute mt-1 hidden group-hover:block bg-gray-700 text-white text-xs px-2 py-1 rounded'>
+              Remove Panel
+            </div>
+          </div>
+        </div>
         )}
       </div>
       <div className='p-4 text-sm text-gray-600 flex-grow glex items-start w-full h-full'>

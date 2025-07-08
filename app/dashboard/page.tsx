@@ -70,7 +70,8 @@ const DashboardPage = () => {
           const fixedPanel = dashboardPanels.find(p => p.id === panelOrder[0])
           if (!fixedPanel) return null
           return (
-            <PanelCard 
+            <PanelCard
+              id={fixedPanel.id} 
               key={fixedPanel.id}              
               title={fixedPanel.title}
               path={fixedPanel.path.replace('/', '')}
@@ -89,6 +90,7 @@ const DashboardPage = () => {
                 return (
                   <SortablePanel key={id} id={id}>
                     <PanelCard                                        
+                      id={id}
                       title={panel.title}
                       path={panel.path.replace('/', '')}
                       icon={panel.icon}

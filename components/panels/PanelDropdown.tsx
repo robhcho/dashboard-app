@@ -32,7 +32,7 @@ export const PanelDropdown: React.FC = () => {
       {open && (
         <div className='absolute right-0 mt-2 w-64 bg-white dark:bg-zinc-700 border border-gray-200 dark:border-zinc-500 rounded shadow-lg z-50'>
           {availablePanels.length === 0 ? (
-            <p>All Panels are currently displayed</p>
+            <p className='p-4 text-sm'>All Panels Are Already Displayed</p>
           ) : (
             availablePanels.map((panel) => (
             <button
