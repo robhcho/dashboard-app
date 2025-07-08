@@ -71,13 +71,11 @@ const DashboardPage = () => {
           if (!fixedPanel) return null
           return (
             <PanelCard 
-              key={fixedPanel.id}
-              panel={fixedPanel}
+              key={fixedPanel.id}              
               title={fixedPanel.title}
               path={fixedPanel.path.replace('/', '')}
               icon={fixedPanel.icon}
-              color={fixedPanel.color}
-              colorDark={fixedPanel.colorDark}
+              color={fixedPanel.color}              
               subheader={fixedPanel.subheader}
             />
           )
@@ -90,13 +88,11 @@ const DashboardPage = () => {
                 if(!panel) return null
                 return (
                   <SortablePanel key={id} id={id}>
-                    <PanelCard                 
-                      panel={panel} 
+                    <PanelCard                                        
                       title={panel.title}
                       path={panel.path.replace('/', '')}
                       icon={panel.icon}
-                      color={panel.color}
-                      colorDark={panel.colorDark}
+                      color={panel.color}                    
                       subheader={panel.subheader}
                     />
                   </SortablePanel>
