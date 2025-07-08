@@ -34,7 +34,7 @@ export const DemographicPanel = () => {
       legend: {
         position: 'bottom' as const,
         labels: {
-          boxWidth: 20
+          boxWidth: 10
         }
       },
       tooltip: {
