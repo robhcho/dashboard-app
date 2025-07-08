@@ -14,6 +14,7 @@ import { RiFunctionAddLine } from 'react-icons/ri'
 import { PanelDropdown } from '@/components/panels/PanelDropdown'
 
 
+
 const DashboardPage = () => {
   const dispatch =  useAppDispatch()
   const panelOrder = useAppSelector(state => state.dashboard.panelOrder)
@@ -64,47 +65,29 @@ const DashboardPage = () => {
         </div>
       </div>
       <WelcomeBoard user='User' companyName='Company' />
-      
-      <div className='p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6'>
-        {(() => {
-          const fixedPanel = dashboardPanels.find(p => p.id === panelOrder[0])
-          if (!fixedPanel) return null
-          return (
-            <PanelCard 
-              key={fixedPanel.id}
-              panel={fixedPanel}
-              title={fixedPanel.title}
-              path={fixedPanel.path.replace('/', '')}
-              icon={fixedPanel.icon}
-              color={fixedPanel.color}
-              colorDark={fixedPanel.colorDark}
-              subheader={fixedPanel.subheader}
-            />
-          )
-        })()}
-        
-        <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
-          <SortableContext items={panelOrder.slice(1)} strategy={verticalListSortingStrategy}>
-              {panelOrder.slice(1).map(id => {
-                const panel = filteredDashPanels.find(p => p.id === id)
-                if(!panel) return null
-                return (
-                  <SortablePanel key={id} id={id}>
-                    <PanelCard                 
-                      panel={panel} 
-                      title={panel.title}
-                      path={panel.path.replace('/', '')}
-                      icon={panel.icon}
-                      color={panel.color}
-                      colorDark={panel.colorDark}
-                      subheader={panel.subheader}
-                    />
-                  </SortablePanel>
-                )
-              })}             
-          </SortableContext>
-        </DndContext>
-      </div>
+      <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+        <SortableContext items={panelOrder} strategy={verticalListSortingStrategy}>
+          <div className='p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6'>
+            {panelOrder.map(id => {
+              const panel = filteredDashPanels.find(p => p.id === id)
+              if(!panel) return null
+              return (
+                <SortablePanel key={id} id={id}>
+                  <PanelCard                 
+                    panel={panel} 
+                    title={panel.title}
+                    path={panel.path.replace('/', '')}
+                    icon={panel.icon}
+                    color={panel.color}
+                    colorDark={panel.colorDark}
+                    subheader={panel.subheader}
+                  />
+                </SortablePanel>
+              )
+            })}             
+          </div>
+        </SortableContext>
+      </DndContext>
     </>
   )
 }
