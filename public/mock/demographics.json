@@ -1,0 +1,57 @@
+[
+  {
+    "MetricType": "Age Range",
+    "Key": "age",
+    "Data": [
+      {
+        "MetricValue": "18 - 24",
+        "Customers": 500,
+        "Customers_Baseline": 450,
+        "Customers_LY": 480,
+        "Boomerang": 25
+      },
+      {
+        "MetricValue": "25 - 34",
+        "Customers": 1200,
+        "Customers_Baseline": 1100,
+        "Customers_LY": 1150,
+        "Boomerang": 100
+      },
+      {
+        "MetricValue": "35 - 44",
+        "Customers": 1600,
+        "Customers_Baseline": 1500,
+        "Customers_LY": 1550,
+        "Boomerang": 150
+      },
+      {
+        "MetricValue": "45 - 54",
+        "Customers": 2000,
+        "Customers_Baseline": 2100,
+        "Customers_LY": 2050,
+        "Boomerang": 180
+      },
+      {
+        "MetricValue": "55 - 64",
+        "Customers": 1900,
+        "Customers_Baseline": 1950,
+        "Customers_LY": 1925,
+        "Boomerang": 160
+      },
+      {
+        "MetricValue": "65 - 74",
+        "Customers": 1300,
+        "Customers_Baseline": 1250,
+        "Customers_LY": 1275,
+        "Boomerang": 120
+      },
+      {
+        "MetricValue": "75+",
+        "Customers": 800,
+        "Customers_Baseline": 850,
+        "Customers_LY": 820,
+        "Boomerang": 60
+      }
+    ]
+  }
+]

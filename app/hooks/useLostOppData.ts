@@ -27,7 +27,7 @@ export const useLostOppData = () => {
 
         setLostopps(data)
       } catch(err: any) {
-        console.error('Error fetching promos', err)
+        console.error('Error fetching data', err)
         setError(err.message || 'Unknown error')
       } finally {
         setLoading(false)

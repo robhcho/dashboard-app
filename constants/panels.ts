@@ -58,7 +58,7 @@ export const dashboardPanels: PanelConfig[] = [
     icon: FaPersonWalkingArrowLoopLeft,
   },  
   {
-    id: 5,
+    id: 6,
     title: 'Demographics',
     path: '/demographics',    
     color: '#8eb858',    
