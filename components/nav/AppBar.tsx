@@ -23,7 +23,7 @@ export const AppBar = ({
       className='flex items-center justify-between px-4 h-14 bg-gradient-to-r from-zinc-800 to-zinc-700 text-white shadow-md fixed top-0 left-0 w-full z-50'
     >
       <div className='flex items-center gap-4'>        
-        <span className='text-xs uppercase tracking-wide text-gray-200'>{companyName}</span>
+        <span className='text-xs uppercase tracking-wide text-gray-200'>DEMO DASHBOARD</span>
       </div>
 
       <div className='flex items-center gap-4'>

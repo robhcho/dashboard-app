@@ -3,9 +3,11 @@
 import React from 'react'
 import { useLostOppData } from '@/app/hooks/useLostOppData'
 import { BarChart } from '../charts/BarChart'
+import { useAppSelector } from '@/lib/hooks'
 
 export const LostOppPanel = () => {
   const {lostopps, loading, error} = useLostOppData()
+  const darkMode = useAppSelector(state => state.theme.darkMode)
   
   if(loading) return <div className='text-center'>Loading...</div>
   if(error) return <div className='text-center text-red-500 py-6'>Error: {error}</div>
@@ -37,7 +39,10 @@ export const LostOppPanel = () => {
     plugins: {
       legend: {
         position: 'top' as const, 
-        labels: {boxWidth: 20}
+        labels: {
+          boxWidth: 20,
+          color: darkMode ? '#fff' : ''
+        }
       },
       tooltip: {
         callbacks: {
@@ -48,15 +53,25 @@ export const LostOppPanel = () => {
     scales: {
       x: {
         stacked: true,
+        ticks: {
+          color: darkMode ? '#fff' : ''
+        },
+        grid: {
+          color: darkMode ? '#fff' : ''
+        }
       },
       y: {
         stacked: true,
         ticks: {
+          color: darkMode ? '#fff' : '',
           callback: (tickValue: string | number): string => {
             const val = typeof tickValue === 'number' ? tickValue : parseFloat(tickValue)
             if (isNaN(val)) return '$0K'
             return `$${(val / 1000).toFixed(0)}K`
           }
+        },
+        grid: {
+          color: darkMode ? '#fff' : ''
         }
       }
     }
@@ -65,9 +80,9 @@ export const LostOppPanel = () => {
   return (
     <div className='p-4'>
       <div className='text-center'>        
-        <p className='text-sm'>
+        <p className='text-sm dark:text-white'>
           The total lost opportunity over the last calendar year is{' '}
-          <span className='text-red-500 font-semibold'>
+          <span className='text-red-500 dark:text-red-300 font-semibold'>
             $
             {lostopps.reduce((sum, entry) => {
               return Math.floor(sum + entry.Data.reduce((acc, d) => acc + d.LostOpp * d.CPP * d.ROI, 0))

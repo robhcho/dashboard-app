@@ -4,9 +4,11 @@ import React, { useEffect, useMemo, useState } from 'react'
 import dayjs from 'dayjs'
 import { DonutChart } from '../charts/DonutChart'
 import { useRoiData } from '@/app/hooks/useRoiData'
+import { useAppSelector } from '@/lib/hooks'
 
 export const RoiPanel: React.FC = () => {  
   const { data: roi, loading, error } = useRoiData()
+  const darkMode = useAppSelector(state => state.theme.darkMode)
   
   const avgTicket = roi?.total_data.Response ? roi.total_data.Sales / roi.total_data.Response : 0
   
@@ -32,7 +34,7 @@ export const RoiPanel: React.FC = () => {
       legend: { 
         position: 'bottom' as const,
         labels: {
-          color: '#555',
+          color: darkMode ? '#fff' : '#555',
           font: {
             size: 12
           }

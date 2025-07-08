@@ -64,7 +64,7 @@ const DashboardPage = () => {
           <PanelDropdown />
         </div>
       </div>
-      <WelcomeBoard user='User' companyName='Company' />
+      <WelcomeBoard user='User' companyName='Demo' />
       <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
         <SortableContext items={panelOrder} strategy={verticalListSortingStrategy}>
           <div className='p-6 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6'>
