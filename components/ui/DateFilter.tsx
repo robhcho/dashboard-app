@@ -37,7 +37,10 @@ export const DateFilter: React.FC<DateFilterProps> = ({onDateChange, minDate, ma
     }
   }, [showCalendar])
   
-  const handleChange = (range: Date | [Date, Date]) => {        
+  const handleChange = (
+    range: Date | [Date | null, Date | null] | null, 
+    _event?: React.MouseEvent<HTMLButtonElement>
+  ) => {        
     if (Array.isArray(range) && range[0] && range[1]) {
       setDateRange([range[0], range[1]])
       onDateChange([range[0], range[1]])

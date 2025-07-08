@@ -10,9 +10,8 @@ import { DraggableAttributes } from '@dnd-kit/core'
 type PanelCardProps = {
   title: string
   path: string
-  color: string
-  colorDark: string
-  icon: React.ReactNode
+  color: string  
+  icon: React.ElementType
   subheader?: string
   dragListeners?: SyntheticListenerMap
   dragAttributes?: DraggableAttributes
@@ -28,7 +27,7 @@ const style = {
 }
 
 export const PanelCard: React.FC<PanelCardProps> = ({ 
-  title, path, icon, subheader, color, colorDark, dragListeners, dragAttributes, setDragHandleRef 
+  title, path, icon, subheader, color, dragListeners, dragAttributes, setDragHandleRef 
 }) => {  
   const Icon = icon
   const PanelComponent = panelComponentMap[path]
