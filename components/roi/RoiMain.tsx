@@ -143,7 +143,6 @@ export const RoiMain = () => {
   const handleDateChange = (range: [Date, Date]) => {
     setDateRange(range)
   }
-  {console.log(filteredCustProsData)}
   
   if(!data) return null
   return (
