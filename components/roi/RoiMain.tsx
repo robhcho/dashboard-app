@@ -163,7 +163,7 @@ export const RoiMain = () => {
           <select
             value={selectedKey}
             onChange={(e) => setSelectedKey(e.target.value as 'cust_pros_daily' | 'list_data_daily')}
-            className='dark:bg-zinc-500'
+            className='dark:bg-zinc-500 border rounded border-width-1 p-2'
           >
             {chartOptions.map((opt) => (
               <option key={opt.key} value={opt.key}>
