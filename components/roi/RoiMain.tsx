@@ -7,6 +7,7 @@ import { RoiTable } from '../ui/Table'
 import { ChartData } from 'chart.js'
 import { DateFilter } from '../ui/DateFilter'
 import { RiExchangeDollarFill } from 'react-icons/ri'
+import { useAppSelector } from '@/lib/hooks'
 
 const columns = [
   {key: 'type', label: 'Type', align: 'left' as const},
@@ -31,6 +32,7 @@ export const RoiMain = () => {
     new Date(new Date().setMonth(new Date().getMonth() - 1)),
     new Date()
   ])
+  const darkMode = useAppSelector(state => state.theme.darkMode)
 
   const filteredCustProsData = useMemo(() => {
     if(!data || !data.cust_pros_daily) return []        
@@ -184,7 +186,7 @@ export const RoiMain = () => {
                     maintainAspectRatio: false, 
                     cutout: '65%', 
                     plugins: {
-                      legend: {position: 'bottom'}
+                      legend: {position: 'bottom', labels: {color: darkMode ? '#fff' : ''}}
                     }
                   }}
                 />
