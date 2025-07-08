@@ -4,53 +4,46 @@
     "Key": "age",
     "Data": [
       {
-        "MetricValue": "18 - 24",
-        "Customers": 500,
-        "Customers_Baseline": 450,
-        "Customers_LY": 480,
-        "Boomerang": 25
+        "metric": "18 - 24",
+        "customers": 500,
+        "customers_baseline": 450,
+        "customers_ly": 480        
       },
       {
-        "MetricValue": "25 - 34",
-        "Customers": 1200,
-        "Customers_Baseline": 1100,
-        "Customers_LY": 1150,
-        "Boomerang": 100
+        "metric": "25 - 34",
+        "customers": 1200,
+        "customers_baseline": 1100,
+        "customers_ly": 1150        
       },
       {
-        "MetricValue": "35 - 44",
-        "Customers": 1600,
-        "Customers_Baseline": 1500,
-        "Customers_LY": 1550,
-        "Boomerang": 150
+        "metric": "35 - 44",
+        "customers": 1600,
+        "customers_baseline": 1500,
+        "customers_ly": 1550        
       },
       {
-        "MetricValue": "45 - 54",
-        "Customers": 2000,
-        "Customers_Baseline": 2100,
-        "Customers_LY": 2050,
-        "Boomerang": 180
+        "metric": "45 - 54",
+        "customers": 2000,
+        "customers_baseline": 2100,
+        "customers_ly": 2050        
       },
       {
-        "MetricValue": "55 - 64",
-        "Customers": 1900,
-        "Customers_Baseline": 1950,
-        "Customers_LY": 1925,
-        "Boomerang": 160
+        "metric": "55 - 64",
+        "customers": 1900,
+        "customers_baseline": 1950,
+        "customers_ly": 1925        
       },
       {
-        "MetricValue": "65 - 74",
-        "Customers": 1300,
-        "Customers_Baseline": 1250,
-        "Customers_LY": 1275,
-        "Boomerang": 120
+        "metric": "65 - 74",
+        "customers": 1300,
+        "customers_baseline": 1250,
+        "customers_ly": 1275        
       },
       {
-        "MetricValue": "75+",
-        "Customers": 800,
-        "Customers_Baseline": 850,
-        "Customers_LY": 820,
-        "Boomerang": 60
+        "metric": "75+",
+        "customers": 800,
+        "customers_baseline": 850,
+        "customers_ly": 820        
       }
     ]
   }
