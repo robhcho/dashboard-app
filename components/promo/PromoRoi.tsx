@@ -4,6 +4,7 @@ import React from 'react'
 import { Promo } from '@/app/hooks/usePromoData'
 import Image from 'next/image'
 import { BarChart } from '../charts/BarChart'
+import { useAppSelector } from '@/lib/hooks'
 
 type PromoRoiDrawerProps = {
   promo: Promo
@@ -12,6 +13,7 @@ type PromoRoiDrawerProps = {
 
 export const PromoRoiDrawer: React.FC<PromoRoiDrawerProps> = ({ promo, onClose }) => {
   const { promo_name, promo_dates, roi, roi_by_market, creatives} = promo 
+  const darkMode = useAppSelector(state => state.theme.darkMode)
 
   const barChartData = {
     labels: roi_by_market.map((entry) => entry.market),
@@ -34,17 +36,25 @@ export const PromoRoiDrawer: React.FC<PromoRoiDrawerProps> = ({ promo, onClose }
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: 'bottom' as const
+        position: 'bottom' as const,
+        labels: {
+          color: darkMode ? '#fff' : ''
+        }
       }
     },
     scales: {
       x: {
-        ticks: {font: {size: 12}}
+        ticks: {font: {size: 12}, color: darkMode ? '#fff' : ''},
+        grid: {color: darkMode ? '#fff' : ''}
       },
       y: {
         ticks: {
+          color: darkMode ? '#fff' : '',
           callback: (value: string | number) => `$${value.toLocaleString()}`,
           font: {size: 12}
+        },
+        grid: {
+          color: darkMode ? '#fff' : ''
         }
       }
     }

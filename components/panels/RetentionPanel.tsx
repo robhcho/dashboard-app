@@ -3,9 +3,11 @@
 import React from 'react'
 import { useRetentionData } from '@/app/hooks/useRetentionData'
 import { LineChart } from '../charts/LineChart'
+import { useAppSelector } from '@/lib/hooks'
 
 export const RetentionPanel = () => {
   const {data: retentionData} = useRetentionData()
+  const darkMode = useAppSelector(state => state.theme.darkMode)
 
   if(!retentionData?.length) return null
   const labels = retentionData.map(d => d.yearmo)
@@ -49,7 +51,8 @@ export const RetentionPanel = () => {
       legend: {
         position: 'bottom' as const,
         labels: {
-          boxWidth: 20
+          boxWidth: 20,
+          color: darkMode ? '#fff' : ''
         }
       },
       tooltip: {
@@ -59,14 +62,26 @@ export const RetentionPanel = () => {
       }
     },
     scales: {
+      x: {
+        ticks: {
+          color: darkMode ? '#fff' : ''
+        },
+        grid: {
+          color: darkMode ? '#fff' : ''
+        }
+      },
       y: {
         ticks: {
+          color: darkMode ? '#fff' : '',
           callback: function (this: any, tickValue: string | number) {
             if(typeof tickValue === 'number') {
               return `${tickValue}%`
             }
             return tickValue
           } 
+        },
+        grid: {
+          color: darkMode ? '#fff' : ''
         }
       }
     }
@@ -82,7 +97,7 @@ export const RetentionPanel = () => {
   
   return (
     <div className='p-4'>
-      <div className='text-center mb-3'>
+      <div className='text-center mb-3 dark:text-white'>
         <h2 className='text-md font-bold'>Customer Retention</h2>
       </div>
       <div className='h-[200px]'>
@@ -91,12 +106,12 @@ export const RetentionPanel = () => {
 
       <div className='flex justify-around text-center mt-3'>
         <div>
-          <p className='text-sm text-gray-500 dark:text-gray-300'>Avg Ticket (New)</p>
-          <p className='text-lg font-semibold text-blue-500'>${averageTicketNew.toLocaleString()}</p>
+          <p className='text-sm text-gray-500 dark:text-gray-200'>Avg Ticket (New)</p>
+          <p className='text-lg font-semibold text-blue-500 dark:text-blue-300'>${averageTicketNew.toLocaleString()}</p>
         </div>
         <div>
-          <p className='text-sm text-gray-500 dark:text-gray-300'>Avg Ticket (Ret)</p>
-          <p className='text-lg font-semibold text-red-500'>${averageTicketRet.toLocaleString()}</p>
+          <p className='text-sm text-gray-500 dark:text-gray-200'>Avg Ticket (Ret)</p>
+          <p className='text-lg font-semibold text-red-500 dark:text-red-300'>${averageTicketRet.toLocaleString()}</p>
         </div>        
       </div>
     </div>

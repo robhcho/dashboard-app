@@ -51,7 +51,7 @@ export const PanelCard: React.FC<PanelCardProps> = ({
             <div className='text-xs opacity-70'>{subheader}</div>
           )}
         </div>
-
+      
         <button
           ref={setDragHandleRef}
           {...dragAttributes}

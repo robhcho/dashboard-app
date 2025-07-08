@@ -3,9 +3,11 @@ import React from 'react'
 import { useDemoData } from '@/app/hooks/usedemoData'
 import { BarChart } from '../charts/BarChart'
 import { DemoRecord } from '@/app/hooks/usedemoData'
+import { useAppSelector } from '@/lib/hooks'
 
 export const DemographicPanel = () => {
   const {data: demoData} = useDemoData()
+  const darkMode = useAppSelector(state => state.theme.darkMode)
   if(!demoData?.length) return null
     
   const total = (key: keyof DemoRecord) => demoData[0].Data.reduce((sum, d) => sum + (d[key] as number || 0), 0)
@@ -34,7 +36,8 @@ export const DemographicPanel = () => {
       legend: {
         position: 'bottom' as const,
         labels: {
-          boxWidth: 20
+          boxWidth: 20,
+          color: darkMode ? '#fff' : ''
         }
       },
       tooltip: {
@@ -44,11 +47,23 @@ export const DemographicPanel = () => {
       }
     },
     scales: {
+      x: {
+        ticks: {
+          color: darkMode ? '#fff' : ''
+        },
+        grid: {
+          color: darkMode ? '#fff' : ''
+        }
+      },
       y: {
         ticks: {
+          color: darkMode ? '#fff' : '',
           callback: function (tickValue: number | string) {
             return typeof tickValue === 'number' ? `${tickValue}%` : tickValue
           }
+        },
+        grid: {
+          color: darkMode ? '#fff' : ''
         },
         beginAtZero: true,
         max: 25
