@@ -21,9 +21,20 @@ export const PromoPage = () => {
   const [compareSelectedPromo, setCompareSelectedPromo] = useState<Promo | null>(null)
   const {promos, loading, error} = usePromoData()
 
-  const filteredPromos = (promos ?? []).filter((promo) => 
-    promo.promo_name.toLowerCase().includes(searchTerm.toLowerCase())
-  )
+  const filteredPromos = (promos ?? []).filter((promo) => {
+    const promoStart = new Date(promo.promo_dates.start)
+    const promoEnd = new Date(promo.promo_dates.end)
+    const [rangeStart, rangeEnd] = dateRange
+
+    return (
+      promo.promo_name.toLowerCase().includes(searchTerm.toLowerCase()) &&
+      (
+        (promoStart >= rangeStart && promoStart <= rangeEnd) ||
+        (promoEnd >= rangeStart && promoEnd <= rangeEnd) ||
+        (promoStart <= rangeStart && promoEnd >= rangeEnd)
+      )
+    )
+  })
 
   const handleViewRoi = (promo: Promo) => {
     setSelectedPromo(promo)
@@ -65,7 +76,7 @@ export const PromoPage = () => {
           className='w-[350px] border rounded-md px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-600'
         />      
         
-        <DateFilter onDateChange={setDateRange} />
+        <DateFilter onDateChange={setDateRange} minDate={new Date('2024-01-01')} maxDate={new Date('2025-07-10')}/>
       </div>
       <div className='mt-6'>
         {filteredPromos.length > 0 ?(
