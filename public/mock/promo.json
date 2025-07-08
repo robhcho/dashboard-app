@@ -7,8 +7,8 @@
     },
     "format": "Oversized Postcard",
     "creatives": {
-      "front": "",
-      "back": ""
+      "front": "/mock-assets/promo1",
+      "back": "/mock-assets/promo1"
     },
     "total_data": {
       "spend": 18446.98,
@@ -179,8 +179,8 @@
     },
     "format": "Catalog",
     "creatives": {
-      "front": "",
-      "back": ""
+      "front": "/mock-assets/promo1.png",
+      "back": "/mock-assets/promo1.png"
     },
     "total_data": {
       "spend": 35330.77,
@@ -260,8 +260,8 @@
   {
     "promo_name": "Back to School",
     "promo_dates": {
-      "start": "2025-08-05",
-      "end": "2025-08-18"
+      "start": "2024-08-05",
+      "end": "2024-08-18"
     },
     "format": "Folded Mailer",
     "creatives": {
@@ -346,8 +346,8 @@
   {
     "promo_name": "Fall Deals",
     "promo_dates": {
-      "start": "2025-09-10",
-      "end": "2025-09-24"
+      "start": "2024-09-10",
+      "end": "2024-09-24"
     },
     "format": "Oversized Postcard",
     "creatives": {
@@ -437,8 +437,8 @@
     },
     "format": "Oversized Postcard",
     "creatives": {
-      "front": "",
-      "back": ""
+      "front": "/mock-assets/4thofJuly2025.png",
+      "back": "/mock-assets/4thofJuly2025.png"
     },
     "total_data": {
       "spend": 35619.96,
@@ -523,8 +523,8 @@
       },
       "format": "Self-Mailer",
       "creatives": {
-        "front": "/mock-assets/flash-promo-1-front.jpg",
-        "back": "/mock-assets/flash-promo-1-back.jpg"
+        "front": "/mock-assets/promo1.png",
+        "back": "/mock-assets/promo1.png"
       },
       "total_data": {
         "spend": 24839,
@@ -695,8 +695,8 @@
       },
       "format": "Folded Mailer",
       "creatives": {
-        "front": "/mock-assets/flash-promo-2-front.jpg",
-        "back": "/mock-assets/flash-promo-2-back.jpg"
+        "front": "/mock-assets/promo1.png",
+        "back": "/mock-assets/promo1.png"
       },
       "total_data": {
         "spend": 16081,
@@ -867,8 +867,8 @@
       },
       "format": "Catalog",
       "creatives": {
-        "front": "/mock-assets/flash-promo-3-front.jpg",
-        "back": "/mock-assets/flash-promo-3-back.jpg"
+        "front": "/mock-assets/promo1.png",
+        "back": "/mock-assets/promo1.png"
       },
       "total_data": {
         "spend": 23427,
@@ -953,8 +953,8 @@
       },
       "format": "Catalog",
       "creatives": {
-        "front": "/mock-assets/flash-promo-4-front.jpg",
-        "back": "/mock-assets/flash-promo-4-back.jpg"
+        "front": "/mock-assets/promo1.png",
+        "back": "/mock-assets/promo1.png"
       },
       "total_data": {
         "spend": 29068,

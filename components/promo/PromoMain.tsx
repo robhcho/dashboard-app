@@ -87,81 +87,95 @@ export const PromoPage = () => {
           <div className='text-gray-500'>No Results Found</div>
         )}
       </div>
+      
+      <div className={`fixed inset-0 z-50 flex pointer-events-none`}>
+        {openRoi && (
+          <div className='absolute inset-0 transition-opacity duration-500 pointer-events-auto' onClick={handleDrawerClose} />
+        )}
 
-      {openRoi && selectedPromo && (
-        <div className={`fixed inset-0 z-50 flex justify-end transition-all duration-300 ${compareOpen ? 'w-1/2' : 'w-full'}`}>
-          <div className='absolute inset-0 bg-black opacity-50' onClick={handleDrawerClose} />
-
-            <div className='relative w-full h-full bg-white dark:bg-zinc-600 shadow-xl p-6 overflow-y-auto'>
-              <div className='flex justify-between items-center mb-4 border-b-2 pb-4'>
-                <h2 className='text-xl font-semibold'>
-                  ROI Breakdown
-                </h2>
-                <div className='flex flex-col items-end'>
-                  <button
-                    onClick={handleDrawerClose}
-                    className='text-sm text-blue-600 hover:underline dark:text-blue-300'
-                  >
-                    Close
-                  </button>
-                  <button
-                    onClick={handleComparePromo}
-                    className='mt-4 text-sm text-blue-600 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-500'
-                  >
-                    Compare To Another Promo
-                  </button>
-                </div>
-              </div>
-              <PromoRoiDrawer promo={selectedPromo} onClose={handleDrawerClose} />
-          </div>
-        </div>
-      )}
-
-      {compareOpen && (
-        <div className='fixed right-0 top-0 w-[50%] h-full bg-white dark:bg-zinc-600 shadow-lg z-50 p-6 overflow-y-auto'>          
-          {!compareSelectedPromo ? (
-            <>
-              <div className='flex justify-between items-center mb-4'>
-                <h2 className='text-xl font-bold'>Compare With Another Promo</h2>
-                <button onClick={() => {
-                  setCompareOpen(false)
-                  setCompareSelectedPromo(null)
-                }}>x</button>
-              </div>
-              
-              {compareTargets.length > 0 ? (
-                compareTargets.map((promo, idx) => (
-                  <div
-                    key={idx}
-                    className='border rounded p-4 mb-4 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-400'
-                    onClick={() => setCompareSelectedPromo(promo)}
-                  >
-                    <h3 className='font-semibold'>{promo.promo_name}</h3>
-                    <p className='text-sm text-gray-600 dark:text-gray-200'>
-                      {promo.promo_dates.start} - {promo.promo_dates.end}
-                    </p>                  
+          <div 
+            className={`transform transition-all duration-500 ease-in-out h-full ${
+              compareOpen ?  'w-1/2 justify-start' : 'w-full justify-end'
+            } bg-white dark:bg-zinc-600 shadow-xl p-6 overflow-y-auto relative pointer-events-auto
+              ${openRoi ? 'translate-x-0' : 'translate-x-full'}
+            `}
+          >
+            {selectedPromo && (
+              <>
+                <div className='flex justify-between items-center mb-4 border-b-2 pb-4'>
+                  <h2 className='text-xl font-semibold'>
+                    ROI Breakdown
+                  </h2>
+                  <div className='flex flex-col items-end'>
+                    <button
+                      onClick={handleDrawerClose}
+                      className='text-sm text-blue-600 hover:underline dark:text-blue-300'
+                    >
+                      Close
+                    </button>
+                    <button
+                      onClick={handleComparePromo}
+                      className='mt-4 text-sm text-blue-600 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-500'
+                    >
+                      Compare To Another Promo
+                    </button>
                   </div>
-                ))
-              ) : (
-                <p>No past promos found for comparison</p>
-              )}
-            </>
-          ) : (
-            <div className='relative h-full'>
-              <div className='flex justify-between items-center mb-4 border-b pb-2'>
-                <h2 className='text-xl font-bold'>ROI Breakdown</h2>
-                <button
-                  onClick={() => setCompareSelectedPromo(null)}
-                  className='text-sm text-blue-600 hover:underline dark:text-blue-300'
-                >
-                  Back To List
-                </button>
-              </div>
-              <PromoRoiDrawer promo={compareSelectedPromo} onClose={() => setCompareSelectedPromo(null)} />
-            </div>
-          )}            
+                </div>
+                <PromoRoiDrawer promo={selectedPromo} onClose={handleDrawerClose} />
+              </>
+            )}
         </div>
-      )}
+      </div>
+    
+      <div 
+        className={`fixed right-0 top-0 w-1/2 h-full bg-white dark:bg-zinc-600 shadow-lg z-50 p-6 overflow-y-auto transform transition-transform duration-500 ease-in-out
+          ${compareOpen ? 'translate-x-0' : 'translate-x-full'}
+        `}
+      >          
+        {!compareSelectedPromo ? (
+          <>
+            <div className='flex justify-between items-center mb-4'>
+              <h2 className='text-xl font-bold'>Compare With Another Promo</h2>
+              <button onClick={() => {
+                setCompareOpen(false)
+                setCompareSelectedPromo(null)
+              }}>x</button>
+            </div>
+            
+            {compareTargets.length > 0 ? (
+              compareTargets.map((promo, idx) => (
+                <div
+                  key={idx}
+                  className='border rounded p-4 mb-4 cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-400'
+                  onClick={() => setCompareSelectedPromo(promo)}
+                >
+                  <h3 className='font-semibold'>{promo.promo_name}</h3>
+                  <p className='text-sm text-gray-600 dark:text-gray-200'>
+                    {promo.promo_dates.start} - {promo.promo_dates.end}
+                  </p>                  
+                </div>
+              ))
+            ) : (
+              <p>No past promos found for comparison</p>
+            )}
+          </>
+        ) : (
+          <div className={`relative h-full transform transition-transform duration-500 ease-in-out
+            ${compareSelectedPromo ? 'translate-x-0' : 'translate-x-full'}
+          `}>
+            <div className='flex justify-between items-center mb-4 border-b pb-2'>
+              <h2 className='text-xl font-bold'>ROI Breakdown</h2>
+              <button
+                onClick={() => setCompareSelectedPromo(null)}
+                className='text-sm text-blue-600 hover:underline dark:text-blue-300'
+              >
+                Back To List
+              </button>
+            </div>
+            <PromoRoiDrawer promo={compareSelectedPromo} onClose={() => setCompareSelectedPromo(null)} />
+          </div>
+        )}            
+      </div>    
     </div>
   )
 }

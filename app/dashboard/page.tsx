@@ -11,6 +11,7 @@ import { SortablePanel } from '@/components/dashboard/SortablePanel'
 import { WelcomeBoard } from '@/components/dashboard/Welcome'
 import { MdSpaceDashboard } from 'react-icons/md'
 import { RiFunctionAddLine } from 'react-icons/ri'
+import { PanelDropdown } from '@/components/panels/PanelDropdown'
 
 
 const DashboardPage = () => {
@@ -31,9 +32,6 @@ const DashboardPage = () => {
   const filteredDashPanels = dashboardPanels.filter(panel => 
     panel.title.toLowerCase().includes(searchTerm.toLowerCase())
   )
-
-  console.log(dashboardPanels)
-  console.log(panelOrder)
 
   const handleDragEnd = (e:any) => {
     const { active, over } = e
@@ -62,9 +60,7 @@ const DashboardPage = () => {
             onChange={(e) => setSearchTerm(e.target.value)}
             className='w-[200px] border rounded-md mr-3 px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-600'
           />
-          <button onClick={() => console.log('add panel')}>
-            <RiFunctionAddLine size={18}/>
-          </button>
+          <PanelDropdown />
         </div>
       </div>
       <WelcomeBoard user='User' companyName='Company' />

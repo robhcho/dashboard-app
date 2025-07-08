@@ -22,26 +22,22 @@ export const AppBar = ({
     <header 
       className='flex items-center justify-between px-4 h-14 bg-gradient-to-r from-zinc-800 to-zinc-700 text-white shadow-md fixed top-0 left-0 w-full z-50'
     >
-      <div className='flex items-center gap-4'>
-        {/* <div className='h-6 bg-gray-500'/> */}
+      <div className='flex items-center gap-4'>        
         <span className='text-xs uppercase tracking-wide text-gray-200'>{companyName}</span>
       </div>
 
       <div className='flex items-center gap-4'>
-        <div className='h-6 w-px bg-gray-500'/>
+        {/* <div className='h-6 w-px bg-gray-500'/>
         <button className='hover:text-gray-300'>
           <IoIosNotifications />
-        </button>
+        </button> */}
         <div className='h-6 w-px bg-gray-500'/>
         <button onClick={() => dispatch(toggleDarkMode())} className='hover:text-gray-300'>
           {darkMode ? <IoIosSunny /> : <IoIosMoon />}
         </button>
         <div className='h-6 w-px bg-gray-500'/>
         <div className='relative'>
-          <AppBarMenu />
-          {/* <button onClick={() => setMenuOpen(prev => !prev)} className='flex items-center gap-1 hover:text-gray-300'>
-            <IoIosMore/>
-          </button> */}
+          <AppBarMenu />          
         </div>
       </div>
     </header>

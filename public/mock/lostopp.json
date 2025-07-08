@@ -1,0 +1,1022 @@
+[
+  {
+    "Month": "Jul 24",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 18571,
+        "CPP": 0.29,
+        "ROI": 0.82,
+        "Mailed": 17687
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 71992,
+        "CPP": 0.95,
+        "ROI": 0.92,
+        "Mailed": 16320
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 86755,
+        "CPP": 1.04,
+        "ROI": 2.51,
+        "Mailed": 13324
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 32100,
+        "CPP": 0.73,
+        "ROI": 2.3,
+        "Mailed": 23873
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 65348,
+        "CPP": 0.72,
+        "ROI": 1.04,
+        "Mailed": 22713
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 81404,
+        "CPP": 0.87,
+        "ROI": 2.46,
+        "Mailed": 9013
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 72757,
+        "CPP": 0.55,
+        "ROI": 2.71,
+        "Mailed": 13350
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 89749,
+        "CPP": 0.64,
+        "ROI": 1.78,
+        "Mailed": 10472
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 93556,
+        "CPP": 0.33,
+        "ROI": 1.83,
+        "Mailed": 19225
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 64504,
+        "CPP": 0.6,
+        "ROI": 1.73,
+        "Mailed": 14880
+      }
+    ]
+  },
+  {
+    "Month": "Aug 24",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 63767,
+        "CPP": 1.1,
+        "ROI": 1.74,
+        "Mailed": 13422
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 67678,
+        "CPP": 1.49,
+        "ROI": 0.55,
+        "Mailed": 19307
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 65573,
+        "CPP": 0.82,
+        "ROI": 1.24,
+        "Mailed": 21734
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 85340,
+        "CPP": 1.01,
+        "ROI": 2.04,
+        "Mailed": 16808
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 65309,
+        "CPP": 1.06,
+        "ROI": 2.43,
+        "Mailed": 22395
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 78338,
+        "CPP": 0.52,
+        "ROI": 2.35,
+        "Mailed": 22583
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 79677,
+        "CPP": 0.95,
+        "ROI": 1.97,
+        "Mailed": 17610
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 38916,
+        "CPP": 1.11,
+        "ROI": 1.16,
+        "Mailed": 8411
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 70650,
+        "CPP": 0.77,
+        "ROI": 1.4,
+        "Mailed": 11963
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 22791,
+        "CPP": 0.67,
+        "ROI": 0.96,
+        "Mailed": 6568
+      }
+    ]
+  },
+  {
+    "Month": "Sep 24",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 13744,
+        "CPP": 0.4,
+        "ROI": 2.36,
+        "Mailed": 18075
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 24095,
+        "CPP": 0.77,
+        "ROI": 0.88,
+        "Mailed": 23145
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 64981,
+        "CPP": 0.89,
+        "ROI": 2.63,
+        "Mailed": 21815
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 36428,
+        "CPP": 0.64,
+        "ROI": 1.04,
+        "Mailed": 22236
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 74066,
+        "CPP": 0.58,
+        "ROI": 1.52,
+        "Mailed": 15616
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 49897,
+        "CPP": 1.46,
+        "ROI": 1.27,
+        "Mailed": 9990
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 95985,
+        "CPP": 0.76,
+        "ROI": 2.17,
+        "Mailed": 21595
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 18963,
+        "CPP": 1.42,
+        "ROI": 1.51,
+        "Mailed": 21703
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 26116,
+        "CPP": 0.72,
+        "ROI": 2.05,
+        "Mailed": 17323
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 69378,
+        "CPP": 1.35,
+        "ROI": 1.87,
+        "Mailed": 8489
+      }
+    ]
+  },
+  {
+    "Month": "Oct 24",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 70052,
+        "CPP": 0.35,
+        "ROI": 1.38,
+        "Mailed": 5673
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 92896,
+        "CPP": 0.75,
+        "ROI": 2.56,
+        "Mailed": 17053
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 56033,
+        "CPP": 1.41,
+        "ROI": 0.91,
+        "Mailed": 14228
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 36991,
+        "CPP": 0.9,
+        "ROI": 1.87,
+        "Mailed": 11433
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 18764,
+        "CPP": 1.31,
+        "ROI": 0.52,
+        "Mailed": 8629
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 16099,
+        "CPP": 0.46,
+        "ROI": 1.96,
+        "Mailed": 17069
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 78673,
+        "CPP": 1.0,
+        "ROI": 1.8,
+        "Mailed": 9030
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 86617,
+        "CPP": 1.0,
+        "ROI": 0.91,
+        "Mailed": 16719
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 94237,
+        "CPP": 1.29,
+        "ROI": 0.5,
+        "Mailed": 10634
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 11568,
+        "CPP": 1.06,
+        "ROI": 1.69,
+        "Mailed": 23323
+      }
+    ]
+  },
+  {
+    "Month": "Nov 24",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 50462,
+        "CPP": 0.69,
+        "ROI": 0.52,
+        "Mailed": 18219
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 54188,
+        "CPP": 1.02,
+        "ROI": 2.17,
+        "Mailed": 11163
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 15568,
+        "CPP": 1.24,
+        "ROI": 1.71,
+        "Mailed": 7092
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 55039,
+        "CPP": 0.42,
+        "ROI": 0.82,
+        "Mailed": 13612
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 22693,
+        "CPP": 1.46,
+        "ROI": 1.32,
+        "Mailed": 7770
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 81876,
+        "CPP": 1.46,
+        "ROI": 1.39,
+        "Mailed": 22406
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 78813,
+        "CPP": 1.32,
+        "ROI": 1.84,
+        "Mailed": 11731
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 83631,
+        "CPP": 0.92,
+        "ROI": 2.72,
+        "Mailed": 9838
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 77346,
+        "CPP": 0.38,
+        "ROI": 2.73,
+        "Mailed": 19591
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 96062,
+        "CPP": 0.94,
+        "ROI": 0.87,
+        "Mailed": 16638
+      }
+    ]
+  },
+  {
+    "Month": "Dec 24",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 54605,
+        "CPP": 0.37,
+        "ROI": 2.75,
+        "Mailed": 15967
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 11765,
+        "CPP": 1.04,
+        "ROI": 0.73,
+        "Mailed": 20454
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 39218,
+        "CPP": 0.66,
+        "ROI": 1.0,
+        "Mailed": 17357
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 65897,
+        "CPP": 0.91,
+        "ROI": 2.93,
+        "Mailed": 15303
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 90841,
+        "CPP": 1.22,
+        "ROI": 0.69,
+        "Mailed": 15031
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 39354,
+        "CPP": 0.74,
+        "ROI": 2.83,
+        "Mailed": 20460
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 33456,
+        "CPP": 0.71,
+        "ROI": 2.96,
+        "Mailed": 15322
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 55650,
+        "CPP": 0.85,
+        "ROI": 2.22,
+        "Mailed": 7596
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 88900,
+        "CPP": 0.7,
+        "ROI": 0.86,
+        "Mailed": 16119
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 33903,
+        "CPP": 0.92,
+        "ROI": 1.11,
+        "Mailed": 19652
+      }
+    ]
+  },
+  {
+    "Month": "Jan 25",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 77471,
+        "CPP": 0.77,
+        "ROI": 2.91,
+        "Mailed": 19966
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 49784,
+        "CPP": 1.4,
+        "ROI": 1.13,
+        "Mailed": 12633
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 74130,
+        "CPP": 1.05,
+        "ROI": 2.47,
+        "Mailed": 20380
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 33614,
+        "CPP": 1.47,
+        "ROI": 1.88,
+        "Mailed": 12546
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 31127,
+        "CPP": 0.73,
+        "ROI": 2.99,
+        "Mailed": 7230
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 21517,
+        "CPP": 0.27,
+        "ROI": 1.55,
+        "Mailed": 14787
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 10030,
+        "CPP": 0.6,
+        "ROI": 2.21,
+        "Mailed": 15907
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 18015,
+        "CPP": 1.01,
+        "ROI": 1.79,
+        "Mailed": 9478
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 60885,
+        "CPP": 1.22,
+        "ROI": 1.91,
+        "Mailed": 17202
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 32383,
+        "CPP": 1.33,
+        "ROI": 0.7,
+        "Mailed": 21831
+      }
+    ]
+  },
+  {
+    "Month": "Feb 25",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 67605,
+        "CPP": 0.27,
+        "ROI": 1.8,
+        "Mailed": 19490
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 69843,
+        "CPP": 0.62,
+        "ROI": 2.63,
+        "Mailed": 18944
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 54889,
+        "CPP": 0.43,
+        "ROI": 1.06,
+        "Mailed": 14699
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 53891,
+        "CPP": 1.15,
+        "ROI": 2.95,
+        "Mailed": 16114
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 14209,
+        "CPP": 1.16,
+        "ROI": 0.52,
+        "Mailed": 21326
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 78046,
+        "CPP": 0.78,
+        "ROI": 2.1,
+        "Mailed": 24753
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 11995,
+        "CPP": 1.06,
+        "ROI": 2.72,
+        "Mailed": 6886
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 41209,
+        "CPP": 1.2,
+        "ROI": 2.22,
+        "Mailed": 19953
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 38331,
+        "CPP": 0.86,
+        "ROI": 1.38,
+        "Mailed": 11971
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 74652,
+        "CPP": 1.09,
+        "ROI": 1.71,
+        "Mailed": 6603
+      }
+    ]
+  },
+  {
+    "Month": "Mar 25",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 45460,
+        "CPP": 1.38,
+        "ROI": 2.91,
+        "Mailed": 12548
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 65926,
+        "CPP": 1.14,
+        "ROI": 1.0,
+        "Mailed": 24039
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 13426,
+        "CPP": 0.27,
+        "ROI": 2.12,
+        "Mailed": 22632
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 53391,
+        "CPP": 1.36,
+        "ROI": 0.69,
+        "Mailed": 6984
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 30616,
+        "CPP": 1.14,
+        "ROI": 1.94,
+        "Mailed": 19219
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 44823,
+        "CPP": 1.43,
+        "ROI": 1.45,
+        "Mailed": 17265
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 12189,
+        "CPP": 1.08,
+        "ROI": 1.89,
+        "Mailed": 21468
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 74963,
+        "CPP": 0.38,
+        "ROI": 0.8,
+        "Mailed": 8842
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 96977,
+        "CPP": 1.41,
+        "ROI": 0.96,
+        "Mailed": 7383
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 30141,
+        "CPP": 1.33,
+        "ROI": 0.69,
+        "Mailed": 14743
+      }
+    ]
+  },
+  {
+    "Month": "Apr 25",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 36392,
+        "CPP": 1.13,
+        "ROI": 1.23,
+        "Mailed": 13195
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 67360,
+        "CPP": 0.34,
+        "ROI": 2.4,
+        "Mailed": 20386
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 30693,
+        "CPP": 0.49,
+        "ROI": 2.05,
+        "Mailed": 9343
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 13856,
+        "CPP": 0.96,
+        "ROI": 2.49,
+        "Mailed": 7861
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 94740,
+        "CPP": 0.49,
+        "ROI": 2.41,
+        "Mailed": 23650
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 60376,
+        "CPP": 0.96,
+        "ROI": 1.38,
+        "Mailed": 11639
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 64750,
+        "CPP": 0.51,
+        "ROI": 1.67,
+        "Mailed": 18595
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 71160,
+        "CPP": 1.21,
+        "ROI": 1.29,
+        "Mailed": 16068
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 64706,
+        "CPP": 0.57,
+        "ROI": 2.5,
+        "Mailed": 14880
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 64324,
+        "CPP": 1.02,
+        "ROI": 2.14,
+        "Mailed": 23238
+      }
+    ]
+  },
+  {
+    "Month": "May 25",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 20346,
+        "CPP": 0.82,
+        "ROI": 2.93,
+        "Mailed": 6791
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 20156,
+        "CPP": 0.25,
+        "ROI": 1.33,
+        "Mailed": 7366
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 16348,
+        "CPP": 1.02,
+        "ROI": 1.31,
+        "Mailed": 8345
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 41175,
+        "CPP": 1.22,
+        "ROI": 2.87,
+        "Mailed": 17092
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 94490,
+        "CPP": 1.21,
+        "ROI": 2.76,
+        "Mailed": 11004
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 48681,
+        "CPP": 1.32,
+        "ROI": 1.35,
+        "Mailed": 6536
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 25652,
+        "CPP": 1.3,
+        "ROI": 1.83,
+        "Mailed": 11052
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 62543,
+        "CPP": 0.7,
+        "ROI": 1.88,
+        "Mailed": 9788
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 26367,
+        "CPP": 0.36,
+        "ROI": 1.06,
+        "Mailed": 17397
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 21088,
+        "CPP": 0.72,
+        "ROI": 2.81,
+        "Mailed": 12392
+      }
+    ]
+  },
+  {
+    "Month": "Jun 25",
+    "Data": [
+      {
+        "DecileID": 1,
+        "DecileRange": "0 - 10",
+        "LostOpp": 30643,
+        "CPP": 0.9,
+        "ROI": 1.7,
+        "Mailed": 7216
+      },
+      {
+        "DecileID": 2,
+        "DecileRange": "10 - 20",
+        "LostOpp": 59890,
+        "CPP": 0.95,
+        "ROI": 2.73,
+        "Mailed": 10071
+      },
+      {
+        "DecileID": 3,
+        "DecileRange": "20 - 30",
+        "LostOpp": 22141,
+        "CPP": 0.94,
+        "ROI": 0.95,
+        "Mailed": 21725
+      },
+      {
+        "DecileID": 4,
+        "DecileRange": "30 - 40",
+        "LostOpp": 15773,
+        "CPP": 1.38,
+        "ROI": 1.49,
+        "Mailed": 24261
+      },
+      {
+        "DecileID": 5,
+        "DecileRange": "40 - 50",
+        "LostOpp": 30437,
+        "CPP": 1.17,
+        "ROI": 1.61,
+        "Mailed": 11075
+      },
+      {
+        "DecileID": 6,
+        "DecileRange": "50 - 60",
+        "LostOpp": 96903,
+        "CPP": 0.63,
+        "ROI": 0.88,
+        "Mailed": 23540
+      },
+      {
+        "DecileID": 7,
+        "DecileRange": "60 - 70",
+        "LostOpp": 35904,
+        "CPP": 1.34,
+        "ROI": 1.19,
+        "Mailed": 14364
+      },
+      {
+        "DecileID": 8,
+        "DecileRange": "70 - 80",
+        "LostOpp": 55849,
+        "CPP": 0.31,
+        "ROI": 1.04,
+        "Mailed": 14436
+      },
+      {
+        "DecileID": 9,
+        "DecileRange": "80 - 90",
+        "LostOpp": 65755,
+        "CPP": 0.61,
+        "ROI": 2.69,
+        "Mailed": 23426
+      },
+      {
+        "DecileID": 10,
+        "DecileRange": "90 - 100",
+        "LostOpp": 82946,
+        "CPP": 1.08,
+        "ROI": 1.7,
+        "Mailed": 17995
+      }
+    ]
+  }
+]

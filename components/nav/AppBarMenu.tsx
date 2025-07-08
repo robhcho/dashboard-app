@@ -11,10 +11,10 @@ import {CgClose} from 'react-icons/cg'
 import { IoIosMore } from 'react-icons/io'
 
 const menuItems = [
-  {key: 'admin', label: 'Admin', icon: <MdVerifiedUser />, color: 'bg-purple-600', action: () => console.log('admin')},
-  {key: 'switch', label: 'Switch', icon: <AiOutlineUserSwitch />, color: 'bg-blue-600', action: () => console.log('switch')},
-  {key: 'support', label: 'Support', icon: <IoMdHelp />, color: 'bg-green-600', action: () => console.log('support')},
-  {key: 'settings', label: 'Settings', icon: <IoSettingsSharp />, color: 'bg-yellow-600', action: () => console.log('settings')},
+  {key: 'admin', label: 'Admin', icon: <MdVerifiedUser />, color: 'bg-blue-600', action: () => console.log('admin')},
+  // {key: 'switch', label: 'Switch', icon: <AiOutlineUserSwitch />, color: 'bg-blue-600', action: () => console.log('switch')},
+  {key: 'support', label: 'Support', icon: <IoMdHelp />, color: 'bg-yellow-600', action: () => console.log('support')},
+  // {key: 'settings', label: 'Settings', icon: <IoSettingsSharp />, color: 'bg-yellow-600', action: () => console.log('settings')},
   {key: 'logout', label: 'Logout', icon: <RiLogoutBoxLine />, color: 'bg-red-600', action: () => console.log('logout')},
 ]
 
