@@ -10,6 +10,9 @@ import { setPanelOrder } from '@/features/dashboardSlice'
 import { SortablePanel } from '@/components/dashboard/SortablePanel'
 import { WelcomeBoard } from '@/components/dashboard/Welcome'
 import { MdSpaceDashboard } from 'react-icons/md'
+import { RiFunctionAddLine } from 'react-icons/ri'
+import { PanelDropdown } from '@/components/panels/PanelDropdown'
+
 
 
 const DashboardPage = () => {
@@ -31,9 +34,6 @@ const DashboardPage = () => {
     panel.title.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
-  console.log(dashboardPanels)
-  console.log(panelOrder)
-
   const handleDragEnd = (e:any) => {
     const { active, over } = e
     if(active.id !== over?.id) {
@@ -53,13 +53,16 @@ const DashboardPage = () => {
           <MdSpaceDashboard className='mr-1'/>
           Dashboard
         </div>
-        <input 
-          type='text'
-          placeholder='Search'
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className='w-[200px] border rounded-md mr-4 px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-600'
-        />
+        <div className='flex items-center mr-4'>
+          <input 
+            type='text'
+            placeholder='Search'
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+            className='w-[200px] border rounded-md mr-3 px-3 py-2 text-sm shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-zinc-600'
+          />
+          <PanelDropdown />
+        </div>
       </div>
       <WelcomeBoard user='User' companyName='Company' />
       <DndContext collisionDetection={closestCenter} onDragEnd={handleDragEnd}>

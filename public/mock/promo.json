@@ -7,8 +7,8 @@
     },
     "format": "Oversized Postcard",
     "creatives": {
-      "front": "",
-      "back": ""
+      "front": "/mock-assets/promo1",
+      "back": "/mock-assets/promo1"
     },
     "total_data": {
       "spend": 18446.98,
@@ -179,8 +179,8 @@
     },
     "format": "Catalog",
     "creatives": {
-      "front": "",
-      "back": ""
+      "front": "/mock-assets/promo1.png",
+      "back": "/mock-assets/promo1.png"
     },
     "total_data": {
       "spend": 35330.77,
@@ -260,8 +260,8 @@
   {
     "promo_name": "Back to School",
     "promo_dates": {
-      "start": "2025-08-05",
-      "end": "2025-08-18"
+      "start": "2024-08-05",
+      "end": "2024-08-18"
     },
     "format": "Folded Mailer",
     "creatives": {
@@ -346,8 +346,8 @@
   {
     "promo_name": "Fall Deals",
     "promo_dates": {
-      "start": "2025-09-10",
-      "end": "2025-09-24"
+      "start": "2024-09-10",
+      "end": "2024-09-24"
     },
     "format": "Oversized Postcard",
     "creatives": {
@@ -437,8 +437,8 @@
     },
     "format": "Oversized Postcard",
     "creatives": {
-      "front": "",
-      "back": ""
+      "front": "/mock-assets/4thofJuly2025.png",
+      "back": "/mock-assets/4thofJuly2025.png"
     },
     "total_data": {
       "spend": 35619.96,
@@ -514,5 +514,521 @@
         "total_sales": 26580.28
       }
     ]
-  }
+  },
+    {
+      "promo_name": "Mid Summer Mailer",
+      "promo_dates": {
+        "start": "2025-06-06",
+        "end": "2025-06-13"
+      },
+      "format": "Self-Mailer",
+      "creatives": {
+        "front": "/mock-assets/promo1.png",
+        "back": "/mock-assets/promo1.png"
+      },
+      "total_data": {
+        "spend": 24839,
+        "mailed": 65041,
+        "responses": 2011,
+        "sales": 194346
+      },
+      "roi": [
+        {
+          "status": "mailed",
+          "spend": 24839,
+          "mailed": 65041,
+          "responses": 2011,
+          "sales": 194346,
+          "total_sales": 219889.31
+        },
+        {
+          "status": "holdout",
+          "spend": 0,
+          "mailed": 0,
+          "responses": 402,
+          "sales": 38869,
+          "total_sales": 42384.34
+        },
+        {
+          "status": "adjusted",
+          "spend": 24839,
+          "mailed": 65041,
+          "responses": 1609,
+          "sales": 155477,
+          "total_sales": 161911.53
+        }
+      ],
+      "roi_by_market": [
+        {
+          "market": "Northeast",
+          "spend": 4905.87,
+          "mailed": 13009,
+          "responses": 403,
+          "sales": 39930.1,
+          "total_sales": 44916.93
+        },
+        {
+          "market": "New England",
+          "spend": 5185.01,
+          "mailed": 13008,
+          "responses": 402,
+          "sales": 40735.33,
+          "total_sales": 41767.41
+        },
+        {
+          "market": "Midwest",
+          "spend": 4881.1,
+          "mailed": 13008,
+          "responses": 402,
+          "sales": 41421.39,
+          "total_sales": 45148.8
+        },
+        {
+          "market": "New York Metro",
+          "spend": 5145.4,
+          "mailed": 13008,
+          "responses": 402,
+          "sales": 36395.37,
+          "total_sales": 38829.2
+        },
+        {
+          "market": "Mid-Atlantic",
+          "spend": 4730.82,
+          "mailed": 13008,
+          "responses": 402,
+          "sales": 39194.21,
+          "total_sales": 40792.93
+        }
+      ]
+    },
+    {
+      "promo_name": "Mid Summer Mailer",
+      "promo_dates": {
+        "start": "2024-06-06",
+        "end": "2024-06-13"
+      },
+      "format": "Self-Mailer",
+      "creatives": {
+        "front": "/mock-assets/flash-promo-1-front.jpg",
+        "back": "/mock-assets/flash-promo-1-back.jpg"
+      },
+      "total_data": {
+        "spend": 22335,
+        "mailed": 61694,
+        "responses": 1945,
+        "sales": 187145
+      },
+      "roi": [
+        {
+          "status": "mailed",
+          "spend": 22397,
+          "mailed": 59852,
+          "responses": 1818,
+          "sales": 171819,
+          "total_sales": 199009
+        },
+        {
+          "status": "holdout",
+          "spend": 0,
+          "mailed": 0,
+          "responses": 361,
+          "sales": 34230,
+          "total_sales": 38528
+        },
+        {
+          "status": "adjusted",
+          "spend": 22054,
+          "mailed": 58525,
+          "responses": 1459,
+          "sales": 146611,
+          "total_sales": 144534
+        }
+      ],
+      "roi_by_market": [
+        {
+          "market": "Northeast",
+          "spend": 4715,
+          "mailed": 12562,
+          "responses": 380,
+          "sales": 35430,
+          "total_sales": 40855
+        },
+        {
+          "market": "New England",
+          "spend": 4661,
+          "mailed": 12004,
+          "responses": 361,
+          "sales": 37429,
+          "total_sales": 37461
+        },
+        {
+          "market": "Midwest",
+          "spend": 4562,
+          "mailed": 11663,
+          "responses": 379,
+          "sales": 37932,
+          "total_sales": 42061
+        },
+        {
+          "market": "New York Metro",
+          "spend": 4909,
+          "mailed": 11889,
+          "responses": 383,
+          "sales": 34030,
+          "total_sales": 35846
+        },
+        {
+          "market": "Mid-Atlantic",
+          "spend": 4297,
+          "mailed": 11936,
+          "responses": 355,
+          "sales": 35186,
+          "total_sales": 39220
+        }
+      ]
+    },
+    {
+      "promo_name": "Sunny Season Sale",
+      "promo_dates": {
+        "start": "2025-06-13",
+        "end": "2025-06-19"
+      },
+      "format": "Folded Mailer",
+      "creatives": {
+        "front": "/mock-assets/promo1.png",
+        "back": "/mock-assets/promo1.png"
+      },
+      "total_data": {
+        "spend": 16081,
+        "mailed": 36583,
+        "responses": 1399,
+        "sales": 172760
+      },
+      "roi": [
+        {
+          "status": "mailed",
+          "spend": 16081,
+          "mailed": 36583,
+          "responses": 1399,
+          "sales": 172760,
+          "total_sales": 192677.8
+        },
+        {
+          "status": "holdout",
+          "spend": 0,
+          "mailed": 0,
+          "responses": 280,
+          "sales": 34552,
+          "total_sales": 37190.47
+        },
+        {
+          "status": "adjusted",
+          "spend": 16081,
+          "mailed": 36583,
+          "responses": 1119,
+          "sales": 138208,
+          "total_sales": 142943.67
+        }
+      ],
+      "roi_by_market": [
+        {
+          "market": "Florida",
+          "spend": 3224.94,
+          "mailed": 7317,
+          "responses": 280,
+          "sales": 33611.57,
+          "total_sales": 37455.26
+        },
+        {
+          "market": "SoCal",
+          "spend": 3353.52,
+          "mailed": 7317,
+          "responses": 280,
+          "sales": 35914.54,
+          "total_sales": 39168.31
+        },
+        {
+          "market": "Bay Area",
+          "spend": 3088.05,
+          "mailed": 7317,
+          "responses": 280,
+          "sales": 35244.69,
+          "total_sales": 38953.99
+        },
+        {
+          "market": "South Central",
+          "spend": 3278.57,
+          "mailed": 7316,
+          "responses": 280,
+          "sales": 34766.99,
+          "total_sales": 37965.26
+        },
+        {
+          "market": "Desert Region",
+          "spend": 3360.16,
+          "mailed": 7316,
+          "responses": 279,
+          "sales": 32462.27,
+          "total_sales": 33961.56
+        }
+      ]
+    },
+    {
+      "promo_name": "Sunny Season Sale",
+      "promo_dates": {
+        "start": "2024-06-13",
+        "end": "2024-06-19"
+      },
+      "format": "Folded Mailer",
+      "creatives": {
+        "front": "/mock-assets/flash-promo-2-front.jpg",
+        "back": "/mock-assets/flash-promo-2-back.jpg"
+      },
+      "total_data": {
+        "spend": 15072,
+        "mailed": 33794,
+        "responses": 1238,
+        "sales": 164391
+      },
+      "roi": [
+        {
+          "status": "mailed",
+          "spend": 14664,
+          "mailed": 32307,
+          "responses": 1335,
+          "sales": 153278,
+          "total_sales": 175758
+        },
+        {
+          "status": "holdout",
+          "spend": 0,
+          "mailed": 0,
+          "responses": 270,
+          "sales": 30918,
+          "total_sales": 35882
+        },
+        {
+          "status": "adjusted",
+          "spend": 14317,
+          "mailed": 32570,
+          "responses": 1020,
+          "sales": 131810,
+          "total_sales": 136569
+        }
+      ],
+      "roi_by_market": [
+        {
+          "market": "Florida",
+          "spend": 3114,
+          "mailed": 6774,
+          "responses": 266,
+          "sales": 29679,
+          "total_sales": 34253
+        },
+        {
+          "market": "SoCal",
+          "spend": 3080,
+          "mailed": 6450,
+          "responses": 264,
+          "sales": 33372,
+          "total_sales": 35514
+        },
+        {
+          "market": "Bay Area",
+          "spend": 2806,
+          "mailed": 7059,
+          "responses": 265,
+          "sales": 33064,
+          "total_sales": 35791
+        },
+        {
+          "market": "South Central",
+          "spend": 3033,
+          "mailed": 6710,
+          "responses": 249,
+          "sales": 32476,
+          "total_sales": 34648
+        },
+        {
+          "market": "Desert Region",
+          "spend": 3173,
+          "mailed": 6927,
+          "responses": 269,
+          "sales": 29543,
+          "total_sales": 32546
+        }
+      ]
+    },
+    {
+      "promo_name": "Stars & Savings Event",
+      "promo_dates": {
+        "start": "2025-06-19",
+        "end": "2025-06-29"
+      },
+      "format": "Catalog",
+      "creatives": {
+        "front": "/mock-assets/promo1.png",
+        "back": "/mock-assets/promo1.png"
+      },
+      "total_data": {
+        "spend": 23427,
+        "mailed": 47535,
+        "responses": 878,
+        "sales": 133956
+      },
+      "roi": [
+        {
+          "status": "mailed",
+          "spend": 23427,
+          "mailed": 47535,
+          "responses": 878,
+          "sales": 133956,
+          "total_sales": 141849.38
+        },
+        {
+          "status": "holdout",
+          "spend": 0,
+          "mailed": 0,
+          "responses": 176,
+          "sales": 26791,
+          "total_sales": 30410.9
+        },
+        {
+          "status": "adjusted",
+          "spend": 23427,
+          "mailed": 47535,
+          "responses": 702,
+          "sales": 107165,
+          "total_sales": 121927.98
+        }
+      ],
+      "roi_by_market": [
+        {
+          "market": "Northeast",
+          "spend": 4857.23,
+          "mailed": 9507,
+          "responses": 176,
+          "sales": 27347.59,
+          "total_sales": 28775.29
+        },
+        {
+          "market": "Mid-Atlantic",
+          "spend": 4869.69,
+          "mailed": 9507,
+          "responses": 176,
+          "sales": 27921.82,
+          "total_sales": 31758.07
+        },
+        {
+          "market": "Pacific Northwest",
+          "spend": 4607.83,
+          "mailed": 9507,
+          "responses": 176,
+          "sales": 27600.9,
+          "total_sales": 30542.52
+        },
+        {
+          "market": "Midwest",
+          "spend": 4483.64,
+          "mailed": 9507,
+          "responses": 175,
+          "sales": 25405.59,
+          "total_sales": 28857.65
+        },
+        {
+          "market": "Desert Region",
+          "spend": 4684.08,
+          "mailed": 9507,
+          "responses": 175,
+          "sales": 28381.15,
+          "total_sales": 31315.57
+        }
+      ]
+    },
+    {
+      "promo_name": "Red, White & Deals",
+      "promo_dates": {
+        "start": "2025-06-30",
+        "end": "2025-07-05"
+      },
+      "format": "Catalog",
+      "creatives": {
+        "front": "/mock-assets/promo1.png",
+        "back": "/mock-assets/promo1.png"
+      },
+      "total_data": {
+        "spend": 29068,
+        "mailed": 61635,
+        "responses": 2242,
+        "sales": 95459
+      },
+      "roi": [
+        {
+          "status": "mailed",
+          "spend": 29068,
+          "mailed": 61635,
+          "responses": 2242,
+          "sales": 95459,
+          "total_sales": 102692.59
+        },
+        {
+          "status": "holdout",
+          "spend": 0,
+          "mailed": 0,
+          "responses": 448,
+          "sales": 19092,
+          "total_sales": 20572.4
+        },
+        {
+          "status": "adjusted",
+          "spend": 29068,
+          "mailed": 61635,
+          "responses": 1794,
+          "sales": 76367,
+          "total_sales": 87026.8
+        }
+      ],
+      "roi_by_market": [
+        {
+          "market": "Northeast",
+          "spend": 6043.95,
+          "mailed": 12327,
+          "responses": 449,
+          "sales": 17946.87,
+          "total_sales": 19947.2
+        },
+        {
+          "market": "Desert Region",
+          "spend": 5699.06,
+          "mailed": 12327,
+          "responses": 449,
+          "sales": 18017.28,
+          "total_sales": 20247.26
+        },
+        {
+          "market": "Florida",
+          "spend": 5593.25,
+          "mailed": 12327,
+          "responses": 448,
+          "sales": 18951.46,
+          "total_sales": 20145.86
+        },
+        {
+          "market": "Mountain Region",
+          "spend": 5719.8,
+          "mailed": 12327,
+          "responses": 448,
+          "sales": 18335.88,
+          "total_sales": 19453.64
+        },
+        {
+          "market": "Northern Plains",
+          "spend": 5555.68,
+          "mailed": 12327,
+          "responses": 448,
+          "sales": 17830.72,
+          "total_sales": 19970.78
+        }
+      ]
+    }
 ]

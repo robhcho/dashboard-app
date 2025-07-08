@@ -27,7 +27,7 @@ export const PromoPanel = () => {
 
   const incrementalSales = mailed && holdout ? mailed.sales - holdout.sales : 0
   const incrementalResponseRate = Math.max((mailedRate - holdoutRate) * 100, 0).toFixed(2)
-
+  
   return (
     <div className='p-4'>
       <h2 className='text-lg font-semibold w-full dark:text-white'>{latestPromo.promo_name}</h2>

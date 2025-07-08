@@ -1,0 +1,56 @@
+[
+  {
+    "yearmo": "2025-01",
+    "customers_new": 1200,
+    "customers_new_ly": 1000,
+    "customers_ret": 2200,
+    "customers_ret_ly": 2100,
+    "avg_ticket_new": 57.5,
+    "avg_ticket_ret": 62.3
+  },
+  {
+    "yearmo": "2025-02",
+    "customers_new": 1300,
+    "customers_new_ly": 1100,
+    "customers_ret": 2300,
+    "customers_ret_ly": 2150,
+    "avg_ticket_new": 58.1,
+    "avg_ticket_ret": 63.7
+  },
+  {
+    "yearmo": "2025-03",
+    "customers_new": 1350,
+    "customers_new_ly": 1200,
+    "customers_ret": 2400,
+    "customers_ret_ly": 2250,
+    "avg_ticket_new": 59.2,
+    "avg_ticket_ret": 64.1
+  },
+  {
+    "yearmo": "2025-04",
+    "customers_new": 1250,
+    "customers_new_ly": 1150,
+    "customers_ret": 2350,
+    "customers_ret_ly": 2200,
+    "avg_ticket_new": 60.0,
+    "avg_ticket_ret": 65.4
+  },
+  {
+    "yearmo": "2025-05",
+    "customers_new": 1400,
+    "customers_new_ly": 1250,
+    "customers_ret": 2500,
+    "customers_ret_ly": 2300,
+    "avg_ticket_new": 61.1,
+    "avg_ticket_ret": 66.3
+  },
+  {
+    "yearmo": "2025-06",
+    "customers_new": 1450,
+    "customers_new_ly": 1300,
+    "customers_ret": 2600,
+    "customers_ret_ly": 2400,
+    "avg_ticket_new": 62.2,
+    "avg_ticket_ret": 67.5
+  }
+]
