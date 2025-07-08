@@ -14,7 +14,7 @@ type SidebarProps = {
 
 const navItems = [
   {title: 'Dashboard', icon: <RiHome4Fill size={20}/>, path: '/dashboard'},
-  // {title: 'Calendar', icon: <BiCalendarEvent size={20}/>, path: '/calendar'},
+  {title: 'Calendar', icon: <BiCalendarEvent size={20}/>, path: '/calendar'},
   {title: 'ROI', icon: <RiExchangeDollarFill size={20}/>, path: '/roi'},
   {title: 'Promos', icon: <IoMailOpenOutline size={20}/>, path: '/promos'}
 ]
